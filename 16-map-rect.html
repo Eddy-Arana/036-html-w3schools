@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es"> <!-- Inicio del documento -->
+
+<head> <!-- Información de la página -->
+
+    <meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+
+    <title>Lección 16 - Image Map Rectangular</title> <!-- Título -->
+
+</head> <!-- Fin del head -->
+
+<body> <!-- Inicio del contenido -->
+
+    <h1>Lección 16 - Área Rectangular</h1>
+
+    <p>
+        Haz clic sobre la computadora.
+    </p>
+
+    <!-- Imagen con mapa -->
+    <img src="workplace.jpg"
+         alt="Workplace"
+         usemap="#workmap"
+         width="400"
+         height="379">
+
+    <!-- Definición del mapa -->
+    <map name="workmap">
+
+        <!-- Área rectangular -->
+        <area shape="rect"
+              coords="34,44,270,350"
+              alt="Computadora"
+              href="https://www.google.com"
+              target="_blank">
+
+    </map>
+
+</body>
+
+</html>
