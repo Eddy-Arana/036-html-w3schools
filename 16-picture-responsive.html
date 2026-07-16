@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 16 - Picture Responsive</title>
+
+</head>
+
+<body>
+
+    <h1>Lección 16 - Elemento Picture</h1>
+
+    <picture>
+
+        <!-- Se muestra en pantallas grandes -->
+
+        <source media="(min-width:650px)"
+                srcset="img_food.jpg">
+
+        <!-- Se muestra en pantallas medianas -->
+
+        <source media="(min-width:465px)"
+                srcset="img_car.jpg">
+
+        <!-- Imagen predeterminada -->
+
+        <img src="img_girl.jpg"
+             alt="Girl"
+             style="width:auto;">
+
+    </picture>
+
+    <p>
+
+        Cambia el tamaño de la ventana para observar cómo cambia la imagen.
+
+    </p>
+
+</body>
+
+</html>
