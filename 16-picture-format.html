@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 16 - Picture Format</title>
+
+</head>
+
+<body>
+
+    <h1>Lección 16 - Picture con distintos formatos</h1>
+
+    <picture>
+
+        <!-- Primera opción -->
+
+        <source srcset="img_avatar.png">
+
+        <!-- Segunda opción -->
+
+        <source srcset="img_girl.jpg">
+
+        <!-- Imagen de respaldo -->
+
+        <img src="img_food.jpg"
+             alt="Imagen de ejemplo"
+             style="width:auto;">
+
+    </picture>
+
+    <p>
+
+        El navegador utiliza la primera imagen compatible que encuentre.
+
+    </p>
+
+</body>
+
+</html>
