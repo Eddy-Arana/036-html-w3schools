@@ -1,0 +1,19 @@
+/* Cambia el color de fondo de toda la pagina */
+body{
+    background-color: lightyellow;
+}
+
+/* Aplica estilos a todos los encabezados */
+h1{
+    color: blue; /* Color del texto */
+    text-align: center; /* Centra texto */
+}
+
+/* Aplica estilos a todos los parrafos */
+p{
+    color: darkred; /* color del texto */
+    border: 2px solid gray; /* Agregar un borde de 2 pixeles */
+    padding: 15px; /* Espacio entre el texto y el borde */
+    margin: 20px; /* Espacio entre el borde y otros elementos */
+    font-family: Arial; /* Tipo de letra*/
+}
