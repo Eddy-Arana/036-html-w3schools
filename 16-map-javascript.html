@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lección 16 - Image Map con JavaScript</title>
+
+</head>
+
+<body>
+
+    <h1>Lección 16 - Image Map con JavaScript</h1>
+
+    <p>
+        Haz clic sobre la taza de café.
+    </p>
+
+    <!-- Imagen -->
+    <img src="workplace.jpg"
+         alt="Workplace"
+         usemap="#workmap"
+         width="400"
+         height="379">
+
+    <!-- Mapa -->
+    <map name="workmap">
+
+        <!-- Área circular con evento JavaScript -->
+        <area shape="circle"
+              coords="337,300,44"
+              href="https://www.coffee.org"
+              alt="Coffee"
+              onclick="mostrarMensaje()">
+
+    </map>
+
+    <!-- Función JavaScript -->
+    <script>
+
+        function mostrarMensaje() {
+
+            alert("¡Has hecho clic en la taza de café!");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
