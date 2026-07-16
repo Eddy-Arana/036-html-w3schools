@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lección 16 - Image Map Circular</title>
+
+</head>
+
+<body>
+
+    <h1>Lección 16 - Área Circular</h1>
+
+    <p>
+        Haz clic sobre la taza de café.
+    </p>
+
+    <!-- Imagen -->
+    <img src="workplace.jpg"
+         alt="Workplace"
+         usemap="#workmap"
+         width="400"
+         height="379">
+
+    <!-- Mapa -->
+    <map name="workmap">
+
+        <!-- Área circular -->
+        <area shape="circle"
+              coords="337,300,44"
+              alt="Coffee"
+              href="https://www.coffee.org"
+              target="_blank">
+
+    </map>
+
+</body>
+
+</html>
