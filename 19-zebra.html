@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es"> <!-- Inicio del documento -->
+
+<head> <!-- Información de la página -->
+
+    <meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+
+    <title>Lección 19 - Zebra Stripes</title>
+
+    <style>
+
+        /* Configuración general de la tabla */
+
+        table{
+            border-collapse: collapse;
+            width:100%;
+        }
+
+        /* Estilo para encabezados y celdas */
+
+        th, td{
+            text-align:left;
+            padding:8px;
+        }
+
+        /* Colorea las filas pares */
+
+        tr:nth-child(even){
+            background-color:#D6EEEE;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <h2>Tabla Zebra</h2>
+
+    <p>Las filas pares cambian de color.</p>
+
+    <!-- Tabla -->
+
+    <table>
+
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Puntos</th>
+        </tr>
+
+        <tr>
+            <td>Pedro</td>
+            <td>García</td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td>María</td>
+            <td>López</td>
+            <td>150</td>
+        </tr>
+
+        <tr>
+            <td>Carlos</td>
+            <td>Pérez</td>
+            <td>300</td>
+        </tr>
+
+        <tr>
+            <td>Ana</td>
+            <td>Ramírez</td>
+            <td>250</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
