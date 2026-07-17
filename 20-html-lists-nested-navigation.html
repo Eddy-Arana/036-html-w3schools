@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 20 - Listas Anidadas y Navegación</title>
+
+    <style>
+        /* ================================================= */
+        /* ESTILOS PARA EL MENÚ DE NAVEGACIÓN HORIZONTAL */
+        /* ================================================= */
+
+        ul.menu {
+            /* Elimina las viñetas */
+            list-style-type: none;
+
+            /* Elimina el margen exterior */
+            margin: 0;
+
+            /* Elimina el espacio interno */
+            padding: 0;
+
+            /* Evita que los elementos se salgan del contenedor */
+            overflow: hidden;
+
+            /* Color de fondo del menú */
+            background-color: #333333;
+        }
+
+        /* Cada elemento del menú se coloca a la izquierda */
+        ul.menu li {
+            float: left;
+        }
+
+        /* Estilo de los enlaces */
+        ul.menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        /* Cambia el color cuando el mouse pasa sobre el enlace */
+        ul.menu li a:hover {
+            background-color: #111111;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ================================================= -->
+    <!-- LISTA ANIDADA -->
+    <!-- Una lista puede contener otra lista -->
+    <!-- ================================================= -->
+
+    <h2>Lista Anidada</h2>
+
+    <p>Una lista puede contener otra lista dentro de un elemento.</p>
+
+    <ul>
+
+        <li>Café</li>
+
+        <li>Té
+
+            <!-- Segunda lista dentro del elemento Té -->
+            <ul>
+                <li>Té Negro</li>
+                <li>Té Verde</li>
+            </ul>
+
+        </li>
+
+        <li>Leche</li>
+
+    </ul>
+
+    <hr>
+
+    <!-- ================================================= -->
+    <!-- MENÚ DE NAVEGACIÓN HORIZONTAL -->
+    <!-- Utiliza una lista y CSS -->
+    <!-- ================================================= -->
+
+    <h2>Menú de Navegación</h2>
+
+    <p>Una lista también puede utilizarse para crear un menú horizontal.</p>
+
+    <ul class="menu">
+
+        <li><a href="#">Inicio</a></li>
+
+        <li><a href="#">Noticias</a></li>
+
+        <li><a href="#">Contacto</a></li>
+
+        <li><a href="#">Acerca de</a></li>
+
+    </ul>
+
+</body>
+
+</html>
