@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es"> <!-- Inicio del documento -->
+
+<head>
+
+    <meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+
+    <title>Lección 19 - Colgroup</title>
+
+    <style>
+
+        /* Bordes de la tabla */
+
+        table, th, td{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <h2>Ejemplo de Colgroup</h2>
+
+    <p>Las primeras dos columnas tienen un color de fondo.</p>
+
+    <!-- Tabla -->
+
+    <table style="width:100%">
+
+        <!-- Agrupa y aplica estilo a dos columnas -->
+
+        <colgroup>
+
+            <col span="2" style="background-color:#D6EEEE">
+
+        </colgroup>
+
+        <tr>
+
+            <th>Lun</th>
+            <th>Mar</th>
+            <th>Mié</th>
+            <th>Jue</th>
+            <th>Vie</th>
+
+        </tr>
+
+        <tr>
+
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+
+        </tr>
+
+        <tr>
+
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
