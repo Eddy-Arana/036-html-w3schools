@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Lección 19 - Combined Zebra</title>
+
+<style>
+
+table, th, td{
+border:1px solid black;
+border-collapse:collapse;
+}
+
+/* Filas pares */
+
+tr:nth-child(even){
+background-color:rgba(150,212,212,0.4);
+}
+
+/* Columnas pares */
+
+th:nth-child(even),
+td:nth-child(even){
+background-color:rgba(150,212,212,0.4);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Filas y Columnas Alternadas</h2>
+
+<table style="width:100%">
+
+<tr>
+<th>Lun</th>
+<th>Mar</th>
+<th>Mié</th>
+<th>Jue</th>
+<th>Vie</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+</tr>
+
+</table>
+
+</body>
+
+</html>
