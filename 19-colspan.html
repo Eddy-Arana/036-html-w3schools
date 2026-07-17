@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Indica que el documento utiliza HTML5 -->
+<html lang="es"> <!-- Inicio del documento -->
+
+<head> <!-- Información de la página -->
+
+    <meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+
+    <title>Lección 19 - Colspan</title> <!-- Título de la pestaña -->
+
+    <style>
+
+        /* Aplica bordes a la tabla */
+
+        table, th, td{
+            border:1px solid black;
+            border-collapse:collapse;
+            padding:10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Título principal -->
+
+    <h2>Celda que ocupa varias columnas</h2>
+
+    <p>El atributo <strong>colspan</strong> permite que una celda abarque varias columnas.</p>
+
+    <!-- Inicio de la tabla -->
+
+    <table style="width:100%">
+
+        <!-- Encabezado -->
+
+        <tr>
+
+            <!-- Esta celda ocupa dos columnas -->
+
+            <th colspan="2">Nombre</th>
+
+            <th>Edad</th>
+
+        </tr>
+
+        <!-- Primera fila -->
+
+        <tr>
+
+            <td>Juan</td>
+
+            <td>Pérez</td>
+
+            <td>25</td>
+
+        </tr>
+
+        <!-- Segunda fila -->
+
+        <tr>
+
+            <td>María</td>
+
+            <td>López</td>
+
+            <td>30</td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
