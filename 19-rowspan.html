@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- Documento HTML5 -->
+<html lang="es"> <!-- Inicio del documento -->
+
+<head>
+
+    <meta charset="UTF-8"> <!-- Codificación UTF-8 -->
+
+    <title>Lección 19 - Rowspan</title> <!-- Título -->
+
+    <style>
+
+        /* Agrega bordes a la tabla */
+
+        table, th, td{
+
+            border:1px solid black;
+
+            border-collapse:collapse;
+
+            padding:10px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <h2>Celda que ocupa varias filas</h2>
+
+    <p>El atributo <strong>rowspan</strong> permite que una celda abarque varias filas.</p>
+
+    <!-- Tabla -->
+
+    <table style="width:100%">
+
+        <!-- Primera fila -->
+
+        <tr>
+
+            <th>Nombre</th>
+
+            <td>Juan Pérez</td>
+
+        </tr>
+
+        <!-- Segunda fila -->
+
+        <tr>
+
+            <!-- Esta celda ocupa dos filas -->
+
+            <th rowspan="2">Teléfono</th>
+
+            <td>555-1234</td>
+
+        </tr>
+
+        <!-- Tercera fila -->
+
+        <tr>
+
+            <td>555-9876</td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
