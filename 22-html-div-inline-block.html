@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lección 22 - Div con Inline-Block</title>
+
+    <style>
+
+        /*
+            Todos los elementos div tendrán
+            un ancho del 30% de la página.
+        */
+        div{
+
+            width:30%;
+
+            /*
+                display:inline-block permite que
+                los div permanezcan en la misma línea
+                sin utilizar float.
+            */
+            display:inline-block;
+
+            /*
+                El espacio interno mejora la presentación.
+            */
+            padding:15px;
+
+            /*
+                Incluye el padding dentro del ancho total.
+            */
+            box-sizing:border-box;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =============================================== -->
+    <!-- DIV CON INLINE-BLOCK                            -->
+    <!-- =============================================== -->
+
+    <h1>Div utilizando display: inline-block</h1>
+
+    <p>
+        La propiedad <strong>display:inline-block</strong>
+        permite mostrar varios elementos uno junto al otro,
+        conservando el comportamiento de un elemento en línea.
+    </p>
+
+    <!-- Primer contenedor -->
+
+    <div style="background-color:#FFF4A3;">
+
+        <h2>Londres</h2>
+
+        <p>Londres es la capital de Inglaterra.</p>
+
+        <p>Tiene más de 9 millones de habitantes.</p>
+
+    </div>
+
+    <!-- Segundo contenedor -->
+
+    <div style="background-color:#FFC0C7;">
+
+        <h2>Oslo</h2>
+
+        <p>Oslo es la capital de Noruega.</p>
+
+        <p>Tiene más de 700,000 habitantes.</p>
+
+    </div>
+
+    <!-- Tercer contenedor -->
+
+    <div style="background-color:#D9EEE1;">
+
+        <h2>Roma</h2>
+
+        <p>Roma es la capital de Italia.</p>
+
+        <p>Tiene más de 4 millones de habitantes.</p>
+
+    </div>
+
+    <hr>
+
+    <!-- =============================================== -->
+    <!-- EXPLICACIÓN                                     -->
+    <!-- =============================================== -->
+
+    <h2>¿Qué hace inline-block?</h2>
+
+    <ul>
+
+        <li>Permite colocar varios elementos en una misma fila.</li>
+
+        <li>No es necesario utilizar <strong>float</strong>.</li>
+
+        <li>Los elementos conservan su ancho y alto.</li>
+
+        <li>Es útil para crear diseños sencillos.</li>
+
+        <li>Actualmente suele reemplazarse por Flexbox o CSS Grid en proyectos modernos.</li>
+
+    </ul>
+
+</body>
+
+</html>
