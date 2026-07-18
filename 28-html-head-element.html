@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Título de la página
+
+         El contenido de <title> aparece en la pestaña
+         del navegador y es importante para el SEO.
+    ====================================================== -->
+    <title>Lección 28 - HTML Head Element</title>
+
+    <!-- =====================================================
+         Meta Charset
+
+         Define la codificación de caracteres UTF-8 para
+         permitir caracteres especiales como á, é, í, ó, ú y ñ.
+    ====================================================== -->
+    <meta charset="UTF-8">
+
+    <!-- =====================================================
+         Meta Viewport
+
+         Hace que la página sea adaptable a dispositivos
+         móviles y diferentes tamaños de pantalla.
+    ====================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================
+         Meta Description
+
+         Proporciona una descripción de la página para
+         los motores de búsqueda.
+    ====================================================== -->
+    <meta
+        name="description"
+        content="Ejemplo de la lección 28 sobre el elemento Head en HTML.">
+
+    <!-- =====================================================
+         Meta Keywords
+
+         Palabras clave relacionadas con el contenido.
+    ====================================================== -->
+    <meta
+        name="keywords"
+        content="HTML, Head, Meta, Title, Link, Style, Script">
+
+    <!-- =====================================================
+         Meta Author
+
+         Indica el autor del documento HTML.
+    ====================================================== -->
+    <meta
+        name="author"
+        content="Tu Nombre">
+
+    <!-- =====================================================
+         Style
+
+         Define estilos CSS para esta página.
+    ====================================================== -->
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+        }
+
+        section {
+            background-color: white;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: #0b5394;
+        }
+
+        button {
+            padding: 10px 18px;
+            cursor: pointer;
+        }
+
+    </style>
+
+    <!-- =====================================================
+         Link
+
+         Normalmente enlaza una hoja de estilos externa.
+
+         Ejemplo:
+
+         <link rel="stylesheet" href="estilos.css">
+
+         En esta lección se deja comentado porque no
+         existe un archivo CSS externo.
+    ====================================================== -->
+
+    <!--
+    <link rel="stylesheet" href="estilos.css">
+    -->
+
+    <!-- =====================================================
+         Base
+
+         Define la URL base para todos los enlaces
+         relativos del documento.
+
+         También se deja comentado para evitar afectar
+         el funcionamiento de la página.
+    ====================================================== -->
+
+    <!--
+    <base href="https://www.w3schools.com/" target="_blank">
+    -->
+
+</head>
+
+<body>
+
+    <h1>Lección 28 - HTML Head Element</h1>
+
+    <p>
+        El elemento <strong>&lt;head&gt;</strong> contiene información
+        sobre el documento HTML que no se muestra directamente
+        en la página.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         1. Elemento Title
+    ====================================================== -->
+
+    <section>
+
+        <h2>1. Elemento &lt;title&gt;</h2>
+
+        <p>
+            El título de esta página aparece en la pestaña
+            del navegador.
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         2. Elemento Style
+    ====================================================== -->
+
+    <section>
+
+        <h2>2. Elemento &lt;style&gt;</h2>
+
+        <p>
+            Los estilos CSS utilizados en esta página fueron
+            definidos dentro del elemento <strong>&lt;style&gt;</strong>.
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         3. Elementos Meta
+    ====================================================== -->
+
+    <section>
+
+        <h2>3. Elementos &lt;meta&gt;</h2>
+
+        <ul>
+
+            <li>Charset UTF-8.</li>
+
+            <li>Viewport para dispositivos móviles.</li>
+
+            <li>Descripción de la página.</li>
+
+            <li>Palabras clave.</li>
+
+            <li>Autor del documento.</li>
+
+        </ul>
+
+    </section>
+
+    <!-- =====================================================
+         4. Elemento Link
+    ====================================================== -->
+
+    <section>
+
+        <h2>4. Elemento &lt;link&gt;</h2>
+
+        <p>
+            Se utiliza para conectar archivos externos,
+            normalmente hojas de estilo CSS.
+        </p>
+
+        <code>
+            &lt;link rel="stylesheet" href="estilos.css"&gt;
+        </code>
+
+    </section>
+
+    <!-- =====================================================
+         5. Elemento Script
+    ====================================================== -->
+
+    <section>
+
+        <h2>5. Elemento &lt;script&gt;</h2>
+
+        <p id="mensaje">
+            Presione el botón.
+        </p>
+
+        <button onclick="mostrarMensaje()">
+            Ejecutar JavaScript
+        </button>
+
+    </section>
+
+    <!-- =====================================================
+         6. Elemento Base
+    ====================================================== -->
+
+    <section>
+
+        <h2>6. Elemento &lt;base&gt;</h2>
+
+        <p>
+            El elemento <strong>&lt;base&gt;</strong> establece una URL
+            base para todos los enlaces relativos de la página.
+        </p>
+
+        <code>
+            &lt;base href="https://www.w3schools.com/" target="_blank"&gt;
+        </code>
+
+    </section>
+
+    <!-- =====================================================
+         JavaScript
+
+         Ejemplo sencillo del uso del elemento script.
+    ====================================================== -->
+
+    <script>
+
+        //=====================================================
+        // Cambia el contenido del párrafo utilizando JavaScript.
+        //=====================================================
+
+        function mostrarMensaje() {
+
+            document.getElementById("mensaje").innerHTML =
+                "¡Hola! El elemento script funciona correctamente.";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
