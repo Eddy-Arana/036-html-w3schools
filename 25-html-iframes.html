@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 25 - HTML Iframes</title>
+
+    <style>
+
+        /*=====================================================
+            Estilo general para los iframes
+        =====================================================*/
+        iframe{
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Lección 25 - HTML Iframes</h1>
+
+    <hr>
+
+    <!--=====================================================
+        1. Iframe básico
+
+        El atributo src indica la página que se mostrará.
+        El atributo title mejora la accesibilidad.
+    =====================================================-->
+
+    <h2>1. Iframe básico</h2>
+
+    <iframe
+        src="https://www.wikipedia.org/"
+        title="Wikipedia">
+    </iframe>
+
+    <hr>
+
+    <!--=====================================================
+        2. Iframe con ancho y alto
+
+        Se utilizan los atributos width y height.
+    =====================================================-->
+
+    <h2>2. Iframe con width y height</h2>
+
+    <iframe
+        src="https://www.wikipedia.org/"
+        width="500"
+        height="250"
+        title="Wikipedia">
+    </iframe>
+
+    <hr>
+
+    <!--=====================================================
+        3. Iframe usando CSS
+
+        El tamaño se controla mediante style.
+    =====================================================-->
+
+    <h2>3. Iframe usando CSS</h2>
+
+    <iframe
+        src="https://www.wikipedia.org/"
+        style="width:500px; height:250px;"
+        title="Wikipedia">
+    </iframe>
+
+    <hr>
+
+    <!--=====================================================
+        4. Iframe sin borde
+
+        border:none elimina el borde predeterminado.
+    =====================================================-->
+
+    <h2>4. Iframe sin borde</h2>
+
+    <iframe
+        src="https://www.wikipedia.org/"
+        style="width:500px; height:250px; border:none;"
+        title="Wikipedia">
+    </iframe>
+
+    <hr>
+
+    <!--=====================================================
+        5. Iframe con borde personalizado
+
+        Se modifica el grosor, color y estilo del borde.
+    =====================================================-->
+
+    <h2>5. Iframe con borde personalizado</h2>
+
+    <iframe
+        src="https://www.wikipedia.org/"
+        style="width:500px; height:250px; border:3px solid red;"
+        title="Wikipedia">
+    </iframe>
+
+    <hr>
+
+    <!--=====================================================
+        6. Iframe como destino de un enlace
+
+        El atributo name del iframe coincide con el
+        atributo target del enlace.
+    =====================================================-->
+
+    <h2>6. Iframe como destino de un enlace</h2>
+
+    <iframe
+        src="about:blank"
+        name="miIframe"
+        width="700"
+        height="350"
+        title="Iframe de navegación">
+    </iframe>
+
+    <br><br>
+
+    <a href="https://www.wikipedia.org/" target="miIframe">
+        Abrir Wikipedia
+    </a>
+
+    <br><br>
+
+    <a href="https://developer.mozilla.org/" target="miIframe">
+        Abrir MDN Web Docs
+    </a>
+
+</body>
+</html>
