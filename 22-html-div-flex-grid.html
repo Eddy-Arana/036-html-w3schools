@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lección 22 - Flexbox y Grid</title>
+
+    <style>
+
+        /* ========================================= */
+        /* FLEXBOX                                  */
+        /* ========================================= */
+
+        /*
+            Este contenedor utiliza Flexbox.
+            Los elementos hijos se colocan
+            automáticamente uno al lado del otro.
+        */
+
+        .flex-container{
+
+            display:flex;
+
+        }
+
+        /*
+            Cada div ocupará aproximadamente
+            una tercera parte del ancho.
+        */
+
+        .flex-container > div{
+
+            width:33%;
+            padding:15px;
+            box-sizing:border-box;
+
+        }
+
+        /* ========================================= */
+        /* GRID                                     */
+        /* ========================================= */
+
+        /*
+            Este contenedor utiliza CSS Grid.
+        */
+
+        .grid-container{
+
+            display:grid;
+
+            /*
+                Se crean tres columnas
+                del mismo tamaño.
+            */
+
+            grid-template-columns:33% 33% 33%;
+
+            margin-top:40px;
+
+        }
+
+        .grid-container > div{
+
+            padding:15px;
+            box-sizing:border-box;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- FLEXBOX                                   -->
+    <!-- ========================================= -->
+
+    <h1>Flexbox</h1>
+
+    <p>
+        Flexbox es una forma moderna de colocar
+        varios elementos uno al lado del otro.
+    </p>
+
+    <div class="flex-container">
+
+        <div style="background-color:#FFF4A3;">
+
+            <h2>Londres</h2>
+
+            <p>Londres es la capital de Inglaterra.</p>
+
+            <p>Tiene más de 9 millones de habitantes.</p>
+
+        </div>
+
+        <div style="background-color:#FFC0C7;">
+
+            <h2>Oslo</h2>
+
+            <p>Oslo es la capital de Noruega.</p>
+
+            <p>Tiene más de 700,000 habitantes.</p>
+
+        </div>
+
+        <div style="background-color:#D9EEE1;">
+
+            <h2>Roma</h2>
+
+            <p>Roma es la capital de Italia.</p>
+
+            <p>Tiene más de 4 millones de habitantes.</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- ========================================= -->
+    <!-- CSS GRID                                  -->
+    <!-- ========================================= -->
+
+    <h1>CSS Grid</h1>
+
+    <p>
+        CSS Grid permite organizar el contenido
+        utilizando filas y columnas.
+    </p>
+
+    <div class="grid-container">
+
+        <div style="background-color:#FFF4A3;">
+
+            <h2>Londres</h2>
+
+            <p>Londres es la capital de Inglaterra.</p>
+
+            <p>Tiene más de 9 millones de habitantes.</p>
+
+        </div>
+
+        <div style="background-color:#FFC0C7;">
+
+            <h2>Oslo</h2>
+
+            <p>Oslo es la capital de Noruega.</p>
+
+            <p>Tiene más de 700,000 habitantes.</p>
+
+        </div>
+
+        <div style="background-color:#D9EEE1;">
+
+            <h2>Roma</h2>
+
+            <p>Roma es la capital de Italia.</p>
+
+            <p>Tiene más de 4 millones de habitantes.</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- ========================================= -->
+    <!-- RESUMEN                                   -->
+    <!-- ========================================= -->
+
+    <h2>Resumen de la Lección 22</h2>
+
+    <ul>
+
+        <li>El elemento <strong>&lt;div&gt;</strong> es un contenedor de tipo Block.</li>
+
+        <li>Se utiliza para organizar secciones de una página web.</li>
+
+        <li>Puede contener cualquier elemento HTML.</li>
+
+        <li>Puede alinearse utilizando <strong>float</strong>.</li>
+
+        <li>También puede alinearse con <strong>display:inline-block</strong>.</li>
+
+        <li>Actualmente la forma recomendada es utilizar <strong>Flexbox</strong>.</li>
+
+        <li>Para diseños más complejos se recomienda <strong>CSS Grid</strong>.</li>
+
+    </ul>
+
+</body>
+
+</html>
