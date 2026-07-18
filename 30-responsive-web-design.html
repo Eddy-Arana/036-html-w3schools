@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Información del documento
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <!-- =====================================================
+         Viewport
+
+         Permite que la página sea adaptable a
+         computadoras, tablets y teléfonos móviles.
+    ====================================================== -->
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 30 - HTML Responsive Web Design</title>
+
+    <!-- =====================================================
+         Estilos CSS
+    ====================================================== -->
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+            line-height:1.6;
+
+        }
+
+        header{
+
+            background:#0b5394;
+            color:white;
+            text-align:center;
+            padding:25px;
+
+        }
+
+        section{
+
+            background:white;
+            margin:25px;
+            padding:20px;
+            border-radius:8px;
+            box-shadow:0px 2px 5px rgba(0,0,0,.2);
+
+        }
+
+        h2{
+
+            color:#0b5394;
+            margin-bottom:15px;
+
+        }
+
+        img{
+
+            border:2px solid gray;
+            border-radius:8px;
+
+        }
+
+        code{
+
+            background:#eeeeee;
+            padding:3px 6px;
+            border-radius:4px;
+
+        }
+
+        /*==================================================
+            Imagen responsive usando width
+        ==================================================*/
+
+        .imagen-width{
+
+            width:100%;
+
+        }
+
+        /*==================================================
+            Imagen responsive usando max-width
+        ==================================================*/
+
+        .imagen-max{
+
+            max-width:100%;
+            height:auto;
+
+        }
+
+        /*==================================================
+            Texto Responsive
+        ==================================================*/
+
+        .texto-responsive{
+
+            font-size:8vw;
+            color:#94420b;
+            text-align:center;
+
+        }
+
+        /*==================================================
+            Layout Responsive
+        ==================================================*/
+
+        .contenedor{
+
+            display:flex;
+            gap:20px;
+
+        }
+
+        .columna{
+
+            flex:1;
+            background:#d9edf7;
+            padding:20px;
+            border-radius:8px;
+
+        }
+
+        /*==================================================
+            Media Query
+
+            Cuando la pantalla sea de 800px o menor,
+            las columnas pasarán una debajo de otra.
+        ==================================================*/
+
+        @media screen and (max-width:800px){
+
+            .contenedor{
+
+                flex-direction:column;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         Encabezado
+    ====================================================== -->
+
+    <header>
+
+        <h1>Lección 30 - HTML Responsive Web Design</h1>
+
+        <p>
+
+            Ejemplos de diseño adaptable para diferentes
+            tamaños de pantalla.
+
+        </p>
+
+    </header>
+
+    <!-- =====================================================
+         1. Viewport
+    ====================================================== -->
+
+    <section>
+
+        <h2>1. Meta Viewport</h2>
+
+        <p>
+
+            Esta página utiliza la etiqueta:
+
+        </p>
+
+        <code>
+
+            &lt;meta name="viewport"
+            content="width=device-width, initial-scale=1.0"&gt;
+
+        </code>
+
+        <p>
+
+            Esto permite que la página se adapte
+            correctamente a cualquier dispositivo.
+
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         2. Imagen Responsive (width)
+    ====================================================== -->
+
+    <section>
+
+        <h2>2. Imagen Responsive usando width:100%</h2>
+
+        <img
+            class="imagen-width"
+            src="https://picsum.photos/id/1018/900/400"
+            alt="Montaña">
+
+        <p>
+
+            CSS utilizado:
+
+        </p>
+
+        <code>
+
+            width:100%;
+
+        </code>
+
+    </section>
+
+    <!-- =====================================================
+         3. Imagen Responsive (max-width)
+    ====================================================== -->
+
+    <section>
+
+        <h2>3. Imagen Responsive usando max-width:100%</h2>
+
+        <img
+            class="imagen-max"
+            src="https://picsum.photos/id/1015/900/400"
+            alt="Lago">
+
+        <p>
+
+            CSS utilizado:
+
+        </p>
+
+        <code>
+
+            max-width:100%;
+            height:auto;
+
+        </code>
+
+    </section>
+
+    <!-- =====================================================
+         4. Elemento Picture
+    ====================================================== -->
+
+    <section>
+
+        <h2>4. Elemento Picture</h2>
+
+        <p>
+
+            Cambie el tamaño de la ventana para ver
+            cómo cambia la imagen.
+
+        </p>
+
+        <picture>
+
+            <source
+                media="(max-width:600px)"
+                srcset="https://picsum.photos/id/1025/500/250">
+
+            <source
+                media="(max-width:1200px)"
+                srcset="https://picsum.photos/id/1016/900/400">
+
+            <img
+                src="https://picsum.photos/id/1018/900/400"
+                alt="Paisaje"
+                style="max-width:100%;height:auto;">
+
+        </picture>
+
+    </section>
+
+    <!-- =====================================================
+         5. Texto Responsive
+    ====================================================== -->
+
+    <section>
+
+        <h2>5. Texto Responsive usando vw</h2>
+
+        <h1 class="texto-responsive">
+
+            Hola Mundo
+
+        </h1>
+
+        <p>
+
+            El tamaño del texto cambia automáticamente
+            al modificar el tamaño de la ventana.
+
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         6. Media Queries
+    ====================================================== -->
+
+    <section>
+
+        <h2>6. Media Queries</h2>
+
+        <p>
+
+            En pantallas grandes las columnas aparecen
+            horizontalmente.
+
+            En pantallas pequeñas aparecen una debajo
+            de otra.
+
+        </p>
+
+        <div class="contenedor">
+
+            <div class="columna">
+
+                <h3>Londres</h3>
+
+                <p>
+
+                    Capital de Inglaterra.
+
+                </p>
+
+            </div>
+
+            <div class="columna">
+
+                <h3>París</h3>
+
+                <p>
+
+                    Capital de Francia.
+
+                </p>
+
+            </div>
+
+            <div class="columna">
+
+                <h3>Tokio</h3>
+
+                <p>
+
+                    Capital de Japón.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         7. Frameworks Responsive
+    ====================================================== -->
+
+    <section>
+
+        <h2>7. Frameworks Responsive</h2>
+
+        <p>
+
+            Existen frameworks CSS que facilitan
+            el desarrollo de sitios responsivos.
+
+        </p>
+
+        <ul>
+
+            <li>W3.CSS</li>
+
+            <li>Bootstrap</li>
+
+        </ul>
+
+        <p>
+
+            Estos frameworks incluyen componentes
+            adaptables para computadoras,
+            tablets y teléfonos móviles.
+
+        </p>
+
+    </section>
+
+</body>
+
+</html>
