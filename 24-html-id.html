@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 24 - HTML id</title>
+
+    <style>
+
+        /* =====================================================
+           Estilo aplicado mediante un ID.
+           El símbolo # indica que el selector es un id.
+        ====================================================== */
+        #miEncabezado{
+            background-color: lightblue;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* =====================================================
+           Clase utilizada para comparar class vs id.
+           Las clases pueden repetirse.
+        ====================================================== */
+        .ciudad{
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Lección 24 - HTML id</h1>
+
+    <hr>
+
+    <!-- =====================================================
+         1. Uso básico del atributo id
+    ====================================================== -->
+
+    <h2>1. Uso básico del atributo id</h2>
+
+    <h1 id="miEncabezado">
+        Mi Encabezado
+    </h1>
+
+    <p>
+        El atributo <strong>id</strong> identifica de forma única
+        un elemento dentro de la página.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         2. Diferencia entre class e id
+    ====================================================== -->
+
+    <h2>2. Diferencia entre class e id</h2>
+
+    <p>
+        Un <strong>id</strong> solo puede utilizarse una vez,
+        mientras que una <strong>class</strong> puede repetirse
+        en varios elementos.
+    </p>
+
+    <h1 id="tituloCiudades">
+        Mis Ciudades
+    </h1>
+
+    <h3 class="ciudad">Londres</h3>
+    <p>Londres es la capital de Inglaterra.</p>
+
+    <h3 class="ciudad">París</h3>
+    <p>París es la capital de Francia.</p>
+
+    <h3 class="ciudad">Tokio</h3>
+    <p>Tokio es la capital de Japón.</p>
+
+    <hr>
+
+    <!-- =====================================================
+         3. Bookmarks (Marcadores)
+    ====================================================== -->
+
+    <h2>3. Bookmarks usando id</h2>
+
+    <p>
+        Haz clic para ir directamente al Capítulo 4.
+    </p>
+
+    <a href="#capitulo4">
+        Ir al Capítulo 4
+    </a>
+
+    <br><br>
+
+    <h3>Capítulo 1</h3>
+    <p>Contenido del capítulo 1...</p>
+
+    <h3>Capítulo 2</h3>
+    <p>Contenido del capítulo 2...</p>
+
+    <h3>Capítulo 3</h3>
+    <p>Contenido del capítulo 3...</p>
+
+    <h3 id="capitulo4">
+        Capítulo 4
+    </h3>
+
+    <p>
+        Llegaste al marcador utilizando el atributo id.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         4. Uso del id con JavaScript
+    ====================================================== -->
+
+    <h2>4. JavaScript utilizando id</h2>
+
+    <h2 id="mensaje">
+        Bienvenido
+    </h2>
+
+    <button onclick="cambiarTexto()">
+        Cambiar mensaje
+    </button>
+
+    <!-- =====================================================
+         JavaScript
+         getElementById() obtiene un único elemento
+         mediante su identificador.
+    ====================================================== -->
+
+    <script>
+
+        function cambiarTexto(){
+
+            document.getElementById("mensaje").innerHTML =
+            "¡Que tengas un excelente día!";
+
+        }
+
+    </script>
+
+</body>
+</html>
