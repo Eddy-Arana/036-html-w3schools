@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lección 22 - Div con Float</title>
+
+    <style>
+
+        /*
+            Este contenedor agrupa todos los div.
+            overflow:auto evita problemas cuando
+            los elementos flotan.
+        */
+        .mycontainer{
+            width:100%;
+            overflow:auto;
+        }
+
+        /*
+            Todos los div internos ocuparán
+            aproximadamente un tercio del ancho
+            y se colocarán uno al lado del otro.
+        */
+        .mycontainer div{
+            width:33%;
+            float:left;
+            box-sizing:border-box;
+            padding:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =============================================== -->
+    <!-- DIV ALINEADOS CON FLOAT                         -->
+    <!-- =============================================== -->
+
+    <h1>Alinear DIV con Float</h1>
+
+    <p>
+        La propiedad <strong>float:left</strong> permite colocar
+        varios elementos uno al lado del otro.
+    </p>
+
+    <!--
+        Contenedor principal.
+        Dentro de él existen tres div flotantes.
+    -->
+
+    <div class="mycontainer">
+
+        <!-- Primer div -->
+
+        <div style="background-color:#FFF4A3;">
+
+            <h2>Londres</h2>
+
+            <p>Londres es la capital de Inglaterra.</p>
+
+            <p>Tiene más de 9 millones de habitantes.</p>
+
+        </div>
+
+        <!-- Segundo div -->
+
+        <div style="background-color:#FFC0C7;">
+
+            <h2>Oslo</h2>
+
+            <p>Oslo es la capital de Noruega.</p>
+
+            <p>Tiene más de 700,000 habitantes.</p>
+
+        </div>
+
+        <!-- Tercer div -->
+
+        <div style="background-color:#D9EEE1;">
+
+            <h2>Roma</h2>
+
+            <p>Roma es la capital de Italia.</p>
+
+            <p>Tiene más de 4 millones de habitantes.</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- =============================================== -->
+    <!-- EXPLICACIÓN                                     -->
+    <!-- =============================================== -->
+
+    <h2>¿Qué hace cada propiedad?</h2>
+
+    <ul>
+
+        <li><strong>float:left;</strong> coloca los elementos horizontalmente.</li>
+
+        <li><strong>width:33%;</strong> hace que cada div ocupe aproximadamente un tercio del espacio.</li>
+
+        <li><strong>overflow:auto;</strong> permite que el contenedor principal incluya correctamente los elementos flotantes.</li>
+
+        <li><strong>box-sizing:border-box;</strong> hace que el padding no aumente el ancho total del div.</li>
+
+    </ul>
+
+</body>
+
+</html>
