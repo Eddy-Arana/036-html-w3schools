@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lección 22 - Centrar un div</title>
+
+    <style>
+
+        /*
+            Se establece un ancho fijo para el div.
+            Si no tuviera un ancho definido,
+            ocuparía el 100% de la pantalla.
+        */
+        div{
+            width:300px;
+
+            /*
+                margin:auto centra horizontalmente
+                el elemento dentro de la página.
+            */
+            margin:auto;
+
+            /*
+                Color de fondo para visualizar
+                mejor el tamaño del contenedor.
+            */
+            background-color:#FFF4A3;
+
+            /*
+                Espacio interno entre el borde
+                y el contenido.
+            */
+            padding:15px;
+
+            /*
+                Borde para apreciar mejor el contenedor.
+            */
+            border:1px solid black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =============================================== -->
+    <!-- DIV CENTRADO                                    -->
+    <!-- =============================================== -->
+
+    <h1>Centrar un elemento DIV</h1>
+
+    <p>
+        Cuando un elemento <strong>div</strong> tiene un ancho definido,
+        podemos centrarlo utilizando la propiedad
+        <strong>margin: auto;</strong>.
+    </p>
+
+    <!--
+        Este div aparecerá centrado horizontalmente.
+    -->
+
+    <div>
+
+        <h2>Londres</h2>
+
+        <p>
+            Londres es la capital de Inglaterra.
+        </p>
+
+        <p>
+            Tiene más de 9 millones de habitantes.
+        </p>
+
+    </div>
+
+    <hr>
+
+    <!-- =============================================== -->
+    <!-- EXPLICACIÓN                                     -->
+    <!-- =============================================== -->
+
+    <h2>¿Cómo funciona?</h2>
+
+    <ul>
+
+        <li><strong>width:</strong> establece el ancho del div.</li>
+
+        <li><strong>margin: auto;</strong> reparte automáticamente el espacio disponible a ambos lados.</li>
+
+        <li>El resultado es un contenedor centrado horizontalmente.</li>
+
+    </ul>
+
+</body>
+
+</html>
