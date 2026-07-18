@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 23 - HTML Class</title>
+
+    <style>
+
+        /* =======================================================
+           Clase utilizada para ejemplos de ciudades
+        ======================================================== */
+        .ciudad{
+            background-color: tomato;
+            color: white;
+            border:2px solid black;
+            margin:20px;
+            padding:20px;
+        }
+
+        /* =======================================================
+           Clase utilizada para resaltar texto
+        ======================================================== */
+        .nota{
+            color:red;
+            font-size:120%;
+        }
+
+        /* =======================================================
+           Clase adicional para demostrar múltiples clases
+        ======================================================== */
+        .principal{
+            font-weight:bold;
+            text-decoration:underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Lección 23 - HTML Class</h1>
+
+    <hr>
+
+    <!-- =======================================================
+         1. Varios elementos utilizando la misma clase
+    ======================================================== -->
+
+    <h2>1. Varios elementos con la misma clase</h2>
+
+    <div class="ciudad">
+        <h3>Londres</h3>
+        <p>Londres es la capital de Inglaterra.</p>
+    </div>
+
+    <div class="ciudad">
+        <h3>París</h3>
+        <p>París es la capital de Francia.</p>
+    </div>
+
+    <div class="ciudad">
+        <h3>Tokio</h3>
+        <p>Tokio es la capital de Japón.</p>
+    </div>
+
+    <hr>
+
+    <!-- =======================================================
+         2. Uso de class dentro de un elemento span
+    ======================================================== -->
+
+    <h2>2. Clase aplicada con span</h2>
+
+    <h3>
+        Mi encabezado
+        <span class="nota">Importante</span>
+    </h3>
+
+    <p>
+        Este es un texto
+        <span class="nota">importante</span>
+        dentro del párrafo.
+    </p>
+
+    <hr>
+
+    <!-- =======================================================
+         3. Sintaxis básica de una clase CSS
+    ======================================================== -->
+
+    <h2>3. Sintaxis básica</h2>
+
+    <h3 class="ciudad">Londres</h3>
+    <p>Londres es la capital de Inglaterra.</p>
+
+    <h3 class="ciudad">París</h3>
+    <p>París es la capital de Francia.</p>
+
+    <h3 class="ciudad">Tokio</h3>
+    <p>Tokio es la capital de Japón.</p>
+
+    <hr>
+
+    <!-- =======================================================
+         4. Múltiples clases en un mismo elemento
+    ======================================================== -->
+
+    <h2>4. Múltiples clases</h2>
+
+    <h3 class="ciudad principal">
+        Londres (ciudad + principal)
+    </h3>
+
+    <h3 class="ciudad">
+        París (solo ciudad)
+    </h3>
+
+    <h3 class="ciudad">
+        Tokio (solo ciudad)
+    </h3>
+
+    <hr>
+
+    <!-- =======================================================
+         5. Diferentes elementos usando la misma clase
+    ======================================================== -->
+
+    <h2>5. Diferentes elementos compartiendo la misma clase</h2>
+
+    <h3 class="nota">París</h3>
+
+    <p class="nota">
+        Este párrafo utiliza exactamente la misma clase
+        que el encabezado anterior.
+    </p>
+
+    <hr>
+
+    <!-- =======================================================
+         6. Uso de class con JavaScript
+    ======================================================== -->
+
+    <h2>6. Uso de class con JavaScript</h2>
+
+    <p>
+        Presiona el botón para ocultar todos los elementos
+        que tengan la clase <strong>ciudad</strong>.
+    </p>
+
+    <button onclick="ocultarCiudades()">
+        Ocultar ciudades
+    </button>
+
+    <!-- =======================================================
+         Script JavaScript
+         getElementsByClassName() obtiene todos los elementos
+         que poseen una clase determinada.
+    ======================================================== -->
+
+    <script>
+
+        function ocultarCiudades(){
+
+            // Obtener todos los elementos con la clase "ciudad"
+            let elementos = document.getElementsByClassName("ciudad");
+
+            // Recorrer todos los elementos encontrados
+            for(let i = 0; i < elementos.length; i++){
+
+                // Ocultar el elemento
+                elementos[i].style.display = "none";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
