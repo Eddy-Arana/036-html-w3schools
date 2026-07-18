@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Metadatos del documento
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 31 - HTML Computer Code Elements</title>
+
+    <!-- =====================================================
+         Estilos CSS
+    ====================================================== -->
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:30px;
+            background:#f4f4f4;
+            line-height:1.6;
+        }
+
+        h1{
+            text-align:center;
+            color:#0b5394;
+        }
+
+        section{
+            background:white;
+            border:1px solid #cccccc;
+            border-radius:8px;
+            padding:20px;
+            margin-bottom:25px;
+        }
+
+        h2{
+            color:#0b5394;
+        }
+
+        code{
+            background:#eeeeee;
+            padding:3px 6px;
+            border-radius:4px;
+            color:#c7254e;
+            font-family: Consolas, monospace;
+        }
+
+        pre{
+            background:#272822;
+            color:white;
+            padding:15px;
+            border-radius:6px;
+            overflow:auto;
+        }
+
+        kbd{
+            background:#333333;
+            color:white;
+            padding:4px 8px;
+            border-radius:4px;
+            font-family: Consolas, monospace;
+        }
+
+        samp{
+            color:green;
+            font-weight:bold;
+            font-family: Consolas, monospace;
+        }
+
+        var{
+            color:blue;
+            font-style:italic;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Lección 31 - HTML Computer Code Elements</h1>
+
+    <p>
+        HTML dispone de varias etiquetas especiales para representar
+        código fuente, entrada del teclado, salida de programas,
+        variables y texto preformateado.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         1. Elemento kbd
+
+         Representa una tecla o combinación de teclas.
+    ====================================================== -->
+
+    <section>
+
+        <h2>1. Elemento &lt;kbd&gt;</h2>
+
+        <p>
+
+            Para guardar un documento presione
+
+            <kbd>Ctrl + S</kbd>
+
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         2. Elemento samp
+
+         Representa la salida de un programa.
+    ====================================================== -->
+
+    <section>
+
+        <h2>2. Elemento &lt;samp&gt;</h2>
+
+        <p>Salida de un programa:</p>
+
+        <p>
+
+            <samp>
+
+                Archivo no encontrado.<br>
+
+                Presione F1 para continuar.
+
+            </samp>
+
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         3. Elemento code
+
+         Representa código fuente.
+    ====================================================== -->
+
+    <section>
+
+        <h2>3. Elemento &lt;code&gt;</h2>
+
+        <p>
+
+            Código escrito en una sola línea:
+
+        </p>
+
+        <code>
+
+            x = 5; y = 6; z = x + y;
+
+        </code>
+
+    </section>
+
+    <!-- =====================================================
+         4. Elementos pre + code
+
+         Conservan espacios y saltos de línea.
+    ====================================================== -->
+
+    <section>
+
+        <h2>4. Elementos &lt;pre&gt; y &lt;code&gt;</h2>
+
+        <pre><code>
+int x = 5;
+int y = 6;
+int z = x + y;
+
+System.out.println(z);
+        </code></pre>
+
+    </section>
+
+    <!-- =====================================================
+         5. Elemento var
+
+         Representa variables matemáticas
+         o de programación.
+    ====================================================== -->
+
+    <section>
+
+        <h2>5. Elemento &lt;var&gt;</h2>
+
+        <p>
+
+            El área de un triángulo es:
+
+            1/2 × <var>b</var> × <var>h</var>
+
+        </p>
+
+        <p>
+
+            Donde:
+
+            <var>b</var> = base
+
+            y
+
+            <var>h</var> = altura.
+
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         6. Resumen
+
+         Etiquetas estudiadas en esta lección.
+    ====================================================== -->
+
+    <section>
+
+        <h2>6. Resumen</h2>
+
+        <ul>
+
+            <li><strong>&lt;kbd&gt;</strong> → Entrada desde el teclado.</li>
+
+            <li><strong>&lt;samp&gt;</strong> → Salida de un programa.</li>
+
+            <li><strong>&lt;code&gt;</strong> → Código fuente.</li>
+
+            <li><strong>&lt;pre&gt;</strong> → Conserva espacios y saltos de línea.</li>
+
+            <li><strong>&lt;var&gt;</strong> → Variables de programación o matemáticas.</li>
+
+        </ul>
+
+    </section>
+
+</body>
+
+</html>
