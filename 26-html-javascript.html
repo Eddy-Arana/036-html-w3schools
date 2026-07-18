@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 26 - HTML JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        section {
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 10px 18px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        img {
+            border: 2px solid gray;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Lección 26 - HTML JavaScript</h1>
+
+    <p>
+        Esta página demuestra cómo JavaScript puede modificar el contenido,
+        los estilos y los atributos de elementos HTML.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         1. Cambiar contenido HTML
+    ====================================================== -->
+
+    <section>
+
+        <h2>1. Cambiar contenido HTML</h2>
+
+        <p id="demo1">
+            Este texto será reemplazado por JavaScript.
+        </p>
+
+        <button onclick="cambiarTexto()">
+            Cambiar texto
+        </button>
+
+    </section>
+
+    <!-- =====================================================
+         2. Cambiar estilos CSS
+    ====================================================== -->
+
+    <section>
+
+        <h2>2. Cambiar estilos CSS</h2>
+
+        <p id="demo2">
+            Este texto cambiará de tamaño, color y fondo.
+        </p>
+
+        <button onclick="cambiarEstilo()">
+            Cambiar estilo
+        </button>
+
+    </section>
+
+    <!-- =====================================================
+         3. Cambiar atributos HTML
+    ====================================================== -->
+
+    <section>
+
+        <h2>3. Cambiar atributo SRC de una imagen</h2>
+
+        <img
+            id="imagen"
+            src="https://picsum.photos/id/1018/500/300"
+            alt="Montaña"
+            width="500">
+
+        <br><br>
+
+        <button onclick="cambiarImagen()">
+            Cambiar imagen
+        </button>
+
+    </section>
+
+    <!-- =====================================================
+         4. Mostrar fecha y hora
+    ====================================================== -->
+
+    <section>
+
+        <h2>4. Mostrar fecha y hora</h2>
+
+        <p id="fecha">
+            Presione el botón para mostrar la fecha y hora actual.
+        </p>
+
+        <button onclick="mostrarFecha()">
+            Mostrar fecha y hora
+        </button>
+
+    </section>
+
+    <!-- =====================================================
+         5. Uso de la etiqueta noscript
+
+         La etiqueta <noscript> muestra un contenido
+         alternativo cuando JavaScript está deshabilitado
+         o cuando el navegador no admite JavaScript.
+    ====================================================== -->
+
+    <section>
+
+        <h2>5. Uso de la etiqueta noscript</h2>
+
+        <!-- Este mensaje solo aparecerá si JavaScript está deshabilitado -->
+        <noscript>
+            <p style="color:red; font-weight:bold;">
+                Su navegador no admite JavaScript o lo tiene deshabilitado.
+            </p>
+        </noscript>
+
+        <!-- Este texto siempre será visible -->
+        <p>
+            Si JavaScript está habilitado, este mensaje no aparecerá.
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         Código JavaScript
+    ====================================================== -->
+
+    <script>
+
+        //======================================================
+        // Cambia el contenido de un elemento HTML.
+        //======================================================
+
+        function cambiarTexto() {
+
+            document.getElementById("demo1").innerHTML =
+                "¡Hola! El contenido fue modificado correctamente.";
+
+        }
+
+        //======================================================
+        // Cambia los estilos CSS de un elemento.
+        //======================================================
+
+        function cambiarEstilo() {
+
+            let elemento = document.getElementById("demo2");
+
+            elemento.style.fontSize = "24px";
+            elemento.style.color = "red";
+            elemento.style.backgroundColor = "yellow";
+            elemento.style.fontWeight = "bold";
+
+        }
+
+        //======================================================
+        // Cambia el atributo src de la imagen.
+        //======================================================
+
+        function cambiarImagen() {
+
+            document.getElementById("imagen").src =
+                "https://picsum.photos/id/1015/500/300";
+
+            document.getElementById("imagen").alt =
+                "Lago";
+
+        }
+
+        //======================================================
+        // Muestra la fecha y hora actual.
+        //======================================================
+
+        function mostrarFecha() {
+
+            document.getElementById("fecha").innerHTML =
+                new Date();
+
+        }
+
+    </script>
+
+</body>
+
+</html>
