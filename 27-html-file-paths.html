@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 27 - HTML File Paths</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        section {
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #0b5394;
+        }
+
+        img {
+            width: 300px;
+            border: 2px solid gray;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Lección 27 - HTML File Paths</h1>
+
+    <p>
+        Un <strong>File Path</strong> (ruta de archivo) indica la ubicación de un archivo
+        dentro de la estructura de carpetas de un sitio web.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         1. Ruta absoluta (Absolute File Path)
+
+         Utiliza la dirección completa (URL) de un archivo
+         ubicado en Internet.
+    ====================================================== -->
+
+    <section>
+
+        <h2>1. Ruta absoluta</h2>
+
+        <p>
+            La imagen se carga utilizando una URL completa.
+        </p>
+
+        <img
+            src="https://picsum.photos/id/1018/300/200"
+            alt="Montaña">
+
+        <p>
+
+            Código utilizado:
+
+            <br><br>
+
+            <code>
+                &lt;img src="https://picsum.photos/id/1018/300/200"&gt;
+            </code>
+
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         2. Ruta relativa (Misma carpeta)
+
+         El archivo se encuentra en la misma carpeta
+         que el documento HTML.
+    ====================================================== -->
+
+    <section>
+
+        <h2>2. Ruta relativa - Misma carpeta</h2>
+
+        <p>
+
+            Ejemplo:
+
+        </p>
+
+        <code>
+            &lt;img src="paisaje.jpg"&gt;
+        </code>
+
+        <p>
+            La imagen "paisaje.jpg" debe estar ubicada
+            en la misma carpeta que este archivo HTML.
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         3. Ruta relativa (Carpeta images)
+
+         El archivo está dentro de una carpeta llamada images.
+    ====================================================== -->
+
+    <section>
+
+        <h2>3. Ruta relativa - Carpeta images</h2>
+
+        <code>
+            &lt;img src="images/paisaje.jpg"&gt;
+        </code>
+
+        <p>
+            El navegador buscará la imagen dentro de la carpeta
+            <strong>images</strong>.
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         4. Ruta desde la raíz del sitio web
+
+         Comienza con "/" indicando la carpeta raíz.
+    ====================================================== -->
+
+    <section>
+
+        <h2>4. Ruta desde la raíz del sitio</h2>
+
+        <code>
+            &lt;img src="/images/paisaje.jpg"&gt;
+        </code>
+
+        <p>
+            La búsqueda inicia desde la carpeta principal
+            del sitio web.
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         5. Ruta hacia la carpeta superior
+
+         Los dos puntos (..) permiten subir un nivel
+         en la estructura de carpetas.
+    ====================================================== -->
+
+    <section>
+
+        <h2>5. Ruta hacia la carpeta superior</h2>
+
+        <code>
+            &lt;img src="../images/paisaje.jpg"&gt;
+        </code>
+
+        <p>
+            El navegador sube un nivel de carpeta antes de
+            buscar la imagen.
+        </p>
+
+    </section>
+
+    <!-- =====================================================
+         6. Buenas prácticas
+
+         Siempre que sea posible, es recomendable utilizar
+         rutas relativas.
+    ====================================================== -->
+
+    <section>
+
+        <h2>6. Buenas prácticas</h2>
+
+        <ul>
+
+            <li>Utilizar rutas relativas cuando sea posible.</li>
+
+            <li>
+                Facilitan mover el proyecto entre diferentes
+                computadoras o servidores.
+            </li>
+
+            <li>
+                Evitan depender de un dominio específico.
+            </li>
+
+            <li>
+                Funcionan tanto en localhost como en un
+                servidor web.
+            </li>
+
+        </ul>
+
+    </section>
+
+</body>
+
+</html>
