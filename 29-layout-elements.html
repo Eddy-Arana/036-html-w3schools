@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- ==========================================
+         Información del documento
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 29 - HTML Layout Elements and Techniques</title>
+
+    <!-- ==========================================
+         Estilos CSS
+    =========================================== -->
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+            line-height:1.6;
+        }
+
+        header{
+            background:#0b5394;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        nav{
+            background:#333;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:gold;
+        }
+
+        /*==========================================
+            Layout con Flexbox
+        ==========================================*/
+
+        .contenedor{
+            display:flex;
+            gap:20px;
+            padding:20px;
+        }
+
+        section{
+            flex:3;
+        }
+
+        article{
+            background:white;
+            padding:20px;
+            border-radius:8px;
+            margin-bottom:20px;
+            box-shadow:0 0 5px rgba(0,0,0,.2);
+        }
+
+        aside{
+            flex:1;
+            background:#d9edf7;
+            padding:20px;
+            border-radius:8px;
+            height:fit-content;
+        }
+
+        details{
+            margin-top:15px;
+            background:#eeeeee;
+            padding:10px;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#0b5394;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         HEADER
+         Encabezado principal del sitio.
+    =========================================== -->
+
+    <header>
+
+        <h1>Lección 29 - HTML Layout Elements</h1>
+
+        <p>
+            Ejemplo utilizando etiquetas semánticas de HTML5
+            y un diseño con Flexbox.
+        </p>
+
+    </header>
+
+    <!-- ==========================================
+         NAV
+         Menú de navegación.
+    =========================================== -->
+
+    <nav>
+
+        <a href="#">Inicio</a>
+
+        <a href="#">Noticias</a>
+
+        <a href="#">Galería</a>
+
+        <a href="#">Contacto</a>
+
+    </nav>
+
+    <!-- ==========================================
+         CONTENEDOR PRINCIPAL
+         Flexbox distribuye el contenido.
+    =========================================== -->
+
+    <div class="contenedor">
+
+        <!-- ======================================
+             SECTION
+             Agrupa contenido relacionado.
+        ======================================= -->
+
+        <section>
+
+            <!-- ==============================
+                 ARTICLE
+                 Contenido independiente.
+            =============================== -->
+
+            <article>
+
+                <h2>Londres</h2>
+
+                <p>
+
+                    Londres es la capital de Inglaterra y una de
+                    las ciudades más importantes del mundo.
+
+                </p>
+
+                <p>
+
+                    Está ubicada a orillas del río Támesis y posee
+                    una historia de más de dos mil años.
+
+                </p>
+
+            </article>
+
+            <!-- ==============================
+                 DETAILS y SUMMARY
+            =============================== -->
+
+            <article>
+
+                <h2>Información adicional</h2>
+
+                <details>
+
+                    <summary>
+                        Haga clic para ver más información
+                    </summary>
+
+                    <p>
+
+                        La etiqueta
+                        <strong>&lt;details&gt;</strong>
+                        permite mostrar u ocultar contenido.
+
+                    </p>
+
+                </details>
+
+            </article>
+
+        </section>
+
+        <!-- ======================================
+             ASIDE
+             Información complementaria.
+        ======================================= -->
+
+        <aside>
+
+            <h3>Barra lateral</h3>
+
+            <p>
+
+                La etiqueta
+                <strong>&lt;aside&gt;</strong>
+                contiene información relacionada con el contenido
+                principal, como anuncios, enlaces o datos extras.
+
+            </p>
+
+        </aside>
+
+    </div>
+
+    <!-- ==========================================
+         FOOTER
+         Pie de página.
+    =========================================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 - Lección 29 HTML Layout Elements and Techniques
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
