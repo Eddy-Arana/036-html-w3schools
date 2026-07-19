@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Lección 37 - HTML Forms
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 37 - HTML Forms</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:30px;
+            background:#f4f7fb;
+            line-height:1.6;
+        }
+
+        h1{
+            text-align:center;
+            color:#0b5394;
+        }
+
+        section{
+            background:white;
+            border:1px solid #cccccc;
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:25px;
+        }
+
+        h2{
+            color:#0b5394;
+        }
+
+        form{
+            margin-top:15px;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input[type=text]{
+            width:250px;
+            padding:8px;
+            margin-top:5px;
+            margin-bottom:15px;
+        }
+
+        input[type=submit]{
+            background:#0b5394;
+            color:white;
+            border:none;
+            padding:10px 18px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        code{
+            background:#eeeeee;
+            padding:3px 6px;
+            border-radius:5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Lección 37 - HTML Forms</h1>
+
+<p>
+
+Los formularios HTML permiten recopilar información del usuario
+como nombres, correos electrónicos, opciones seleccionadas y
+otros datos para enviarlos a un servidor.
+
+</p>
+
+<hr>
+
+<!-- =====================================================
+     1. Elemento Form
+====================================================== -->
+
+<section>
+
+<h2>1. Elemento &lt;form&gt;</h2>
+
+<p>
+
+El elemento <strong>&lt;form&gt;</strong> es el contenedor
+de todos los controles del formulario.
+
+</p>
+
+<code>
+
+&lt;form&gt;
+...
+&lt;/form&gt;
+
+</code>
+
+<form>
+
+<p>
+
+Este formulario contiene diferentes elementos HTML.
+
+</p>
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     2. Campos de texto
+====================================================== -->
+
+<section>
+
+<h2>2. Campos de texto (Text Fields)</h2>
+
+<p>
+
+Los campos de texto permiten ingresar información en una sola línea.
+
+</p>
+
+<form>
+
+<label for="nombre">
+
+Nombre:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="nombre"
+name="nombre">
+
+<br>
+
+<label for="apellido">
+
+Apellido:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="apellido"
+name="apellido">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     3. Elemento Label
+====================================================== -->
+
+<section>
+
+<h2>3. Elemento &lt;label&gt;</h2>
+
+<p>
+
+La etiqueta <strong>&lt;label&gt;</strong> identifica
+claramente cada campo del formulario.
+
+</p>
+
+<p>
+
+El atributo <strong>for</strong> debe coincidir con el
+atributo <strong>id</strong> del elemento correspondiente.
+
+</p>
+
+<code>
+
+&lt;label for="correo"&gt;Correo&lt;/label&gt;
+
+</code>
+
+<br><br>
+
+<label for="correo">
+
+Correo electrónico:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="correo"
+name="correo">
+
+</section>
+
+<!-- =====================================================
+     4. Radio Buttons
+====================================================== -->
+
+<section>
+
+<h2>4. Radio Buttons</h2>
+
+<p>
+
+Los botones de opción permiten seleccionar solamente
+una opción.
+
+</p>
+
+<form>
+
+<input
+type="radio"
+id="html"
+name="lenguaje"
+value="HTML">
+
+<label for="html">
+
+HTML
+
+</label>
+
+<br>
+
+<input
+type="radio"
+id="css"
+name="lenguaje"
+value="CSS">
+
+<label for="css">
+
+CSS
+
+</label>
+
+<br>
+
+<input
+type="radio"
+id="javascript"
+name="lenguaje"
+value="JavaScript">
+
+<label for="javascript">
+
+JavaScript
+
+</label>
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     5. Checkboxes
+====================================================== -->
+
+<section>
+
+<h2>5. Checkboxes</h2>
+
+<p>
+
+Las casillas de verificación permiten seleccionar
+cero, una o varias opciones.
+
+</p>
+
+<form>
+
+<input
+type="checkbox"
+id="html2"
+name="html">
+
+<label for="html2">
+
+Conozco HTML
+
+</label>
+
+<br>
+
+<input
+type="checkbox"
+id="css2"
+name="css">
+
+<label for="css2">
+
+Conozco CSS
+
+</label>
+
+<br>
+
+<input
+type="checkbox"
+id="js2"
+name="javascript">
+
+<label for="js2">
+
+Conozco JavaScript
+
+</label>
+
+</form>
+
+</section>
+<!-- =====================================================
+     6. Submit Button
+====================================================== -->
+
+<section>
+
+<h2>6. Botón Submit</h2>
+
+<p>
+
+El botón <strong>Submit</strong> envía la información del
+formulario al servidor indicado en el atributo
+<strong>action</strong>.
+
+</p>
+
+<form action="/action_page.php">
+
+<label for="nombre2">
+
+Nombre:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="nombre2"
+name="nombre"
+value="Juan">
+
+<br><br>
+
+<label for="apellido2">
+
+Apellido:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="apellido2"
+name="apellido"
+value="Pérez">
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar formulario">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     7. Atributo Name
+====================================================== -->
+
+<section>
+
+<h2>7. Atributo name</h2>
+
+<p>
+
+Cada campo del formulario debe tener un atributo
+<strong>name</strong>, ya que este identifica el dato
+que será enviado al servidor.
+
+</p>
+
+<code>
+
+&lt;input type="text"
+name="nombre"&gt;
+
+</code>
+
+<p>
+
+Si un campo no posee el atributo
+<strong>name</strong>, su información no será enviada
+cuando el usuario presione el botón Submit.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     8. Formulario Completo
+====================================================== -->
+
+<section>
+
+<h2>8. Ejemplo de formulario completo</h2>
+
+<form action="/action_page.php">
+
+<label for="nombre3">
+
+Nombre:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="nombre3"
+name="nombre">
+
+<br><br>
+
+<label for="apellido3">
+
+Apellido:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="apellido3"
+name="apellido">
+
+<br><br>
+
+<p>
+
+Seleccione su lenguaje favorito:
+
+</p>
+
+<input
+type="radio"
+id="html3"
+name="lenguaje"
+value="HTML">
+
+<label for="html3">
+
+HTML
+
+</label>
+
+<br>
+
+<input
+type="radio"
+id="css3"
+name="lenguaje"
+value="CSS">
+
+<label for="css3">
+
+CSS
+
+</label>
+
+<br>
+
+<input
+type="radio"
+id="js3"
+name="lenguaje"
+value="JavaScript">
+
+<label for="js3">
+
+JavaScript
+
+</label>
+
+<br><br>
+
+<p>
+
+Seleccione los conocimientos que posee:
+
+</p>
+
+<input
+type="checkbox"
+id="check1"
+name="html">
+
+<label for="check1">
+
+HTML
+
+</label>
+
+<br>
+
+<input
+type="checkbox"
+id="check2"
+name="css">
+
+<label for="check2">
+
+CSS
+
+</label>
+
+<br>
+
+<input
+type="checkbox"
+id="check3"
+name="javascript">
+
+<label for="check3">
+
+JavaScript
+
+</label>
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar información">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     9. Resumen
+====================================================== -->
+
+<section>
+
+<h2>9. Resumen de la lección</h2>
+
+<ul>
+
+<li>El elemento <strong>&lt;form&gt;</strong> crea un formulario HTML.</li>
+
+<li><strong>&lt;input&gt;</strong> permite ingresar información.</li>
+
+<li><strong>&lt;label&gt;</strong> identifica cada campo del formulario.</li>
+
+<li>Los <strong>Radio Buttons</strong> permiten seleccionar una sola opción.</li>
+
+<li>Los <strong>Checkboxes</strong> permiten seleccionar varias opciones.</li>
+
+<li>El botón <strong>Submit</strong> envía los datos al servidor.</li>
+
+<li>El atributo <strong>name</strong> es obligatorio para enviar los datos.</li>
+
+</ul>
+
+</section>
+
+<hr>
+
+<footer>
+
+<p style="text-align:center;">
+
+Lección 37 - HTML Forms<br>
+
+Creación de formularios HTML utilizando el elemento
+<strong>&lt;form&gt;</strong> y diferentes tipos de
+<strong>&lt;input&gt;</strong>.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
