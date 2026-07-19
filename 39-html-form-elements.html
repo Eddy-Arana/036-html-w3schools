@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 39 - HTML Form Elements</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:40px;
+            background:#f5f5f5;
+            line-height:1.6;
+        }
+
+        h1{
+            color:#0b5394;
+        }
+
+        section{
+            background:white;
+            padding:20px;
+            margin-bottom:25px;
+            border-radius:10px;
+            box-shadow:0 0 8px rgba(0,0,0,.15);
+        }
+
+        h2{
+            color:#1565c0;
+        }
+
+        form{
+            margin-top:15px;
+        }
+
+        input,
+        select,
+        textarea,
+        button{
+            margin-top:8px;
+            margin-bottom:15px;
+            padding:8px;
+            width:300px;
+            max-width:100%;
+        }
+
+        fieldset{
+            border:2px solid #1565c0;
+            padding:15px;
+        }
+
+        legend{
+            font-weight:bold;
+            color:#1565c0;
+        }
+
+        code{
+            background:#eeeeee;
+            padding:2px 6px;
+            border-radius:4px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Lección 39 - HTML Form Elements</h1>
+
+<p>
+
+Esta lección muestra todos los elementos que pueden formar parte de un formulario HTML.
+
+</p>
+
+<hr>
+
+<!-- =======================================================
+1. INPUT
+======================================================= -->
+
+<section>
+
+<h2>1. Elemento &lt;input&gt;</h2>
+
+<p>
+
+Es el elemento más utilizado dentro de un formulario.
+
+</p>
+
+<form>
+
+<label for="nombre">
+
+Nombre:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="nombre"
+name="nombre">
+
+</form>
+
+</section>
+
+<!-- =======================================================
+2. LABEL
+======================================================= -->
+
+<section>
+
+<h2>2. Elemento &lt;label&gt;</h2>
+
+<p>
+
+El elemento <code>&lt;label&gt;</code> describe un campo del formulario y mejora la accesibilidad.
+
+</p>
+
+<form>
+
+<label for="correo">
+
+Correo electrónico:
+
+</label>
+
+<br>
+
+<input
+type="email"
+id="correo"
+name="correo">
+
+</form>
+
+</section>
+
+<!-- =======================================================
+3. SELECT
+======================================================= -->
+
+<section>
+
+<h2>3. Elemento &lt;select&gt;</h2>
+
+<p>
+
+Permite seleccionar una opción de una lista.
+
+</p>
+
+<form>
+
+<label for="pais">
+
+Seleccione un país:
+
+</label>
+
+<br>
+
+<select
+id="pais"
+name="pais">
+
+<option>Guatemala</option>
+
+<option>México</option>
+
+<option>El Salvador</option>
+
+<option>Honduras</option>
+
+</select>
+
+</form>
+
+</section>
+
+<!-- =======================================================
+4. OPTION SELECTED
+======================================================= -->
+
+<section>
+
+<h2>4. Opción seleccionada por defecto</h2>
+
+<form>
+
+<select>
+
+<option>HTML</option>
+
+<option selected>CSS</option>
+
+<option>JavaScript</option>
+
+</select>
+
+</form>
+
+</section>
+
+<!-- =======================================================
+5. SIZE
+======================================================= -->
+
+<section>
+
+<h2>5. Atributo size</h2>
+
+<p>
+
+Muestra varias opciones visibles al mismo tiempo.
+
+</p>
+
+<form>
+
+<select size="4">
+
+<option>Windows</option>
+
+<option>Linux</option>
+
+<option>macOS</option>
+
+<option>Android</option>
+
+<option>iOS</option>
+
+</select>
+
+</form>
+
+</section>
+
+<!-- =======================================================
+6. MULTIPLE
+======================================================= -->
+
+<section>
+
+<h2>6. Selección múltiple</h2>
+
+<p>
+
+Con el atributo <code>multiple</code> se pueden seleccionar varias opciones.
+
+</p>
+
+<form>
+
+<select
+multiple
+size="4">
+
+<option>HTML</option>
+
+<option>CSS</option>
+
+<option>JavaScript</option>
+
+<option>PHP</option>
+
+<option>Python</option>
+
+</select>
+
+</form>
+
+</section>
+
+<!-- =======================================================
+7. TEXTAREA
+======================================================= -->
+
+<section>
+
+<h2>7. Elemento &lt;textarea&gt;</h2>
+
+<p>
+
+Permite escribir texto en varias líneas.
+
+</p>
+
+<form>
+
+<textarea
+rows="6"
+cols="40">
+
+Escribe aquí tu comentario...
+
+</textarea>
+
+</form>
+
+</section>
+
+<!-- =======================================================
+8. TEXTAREA CSS
+======================================================= -->
+
+<section>
+
+<h2>8. Textarea usando CSS</h2>
+
+<form>
+
+<textarea
+style="width:350px;height:120px;">
+
+Área de texto personalizada.
+
+</textarea>
+
+</form>
+
+</section>
+
+<!-- =======================================================
+9. BUTTON
+======================================================= -->
+
+<section>
+
+<h2>9. Elemento &lt;button&gt;</h2>
+
+<p>
+
+Botón que ejecuta JavaScript.
+
+</p>
+
+<button
+type="button"
+onclick="alert('Hola Mundo')">
+
+Haz clic
+
+</button>
+
+</section>
+
+<!-- =======================================================
+10. FIELDSET
+======================================================= -->
+
+<section>
+
+<h2>10. Fieldset y Legend</h2>
+
+<p>
+
+Agrupan elementos relacionados dentro del formulario.
+
+</p>
+
+<form>
+
+<fieldset>
+
+<legend>
+
+Información Personal
+
+</legend>
+
+<label for="nom">
+
+Nombre:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="nom">
+
+<br>
+
+<label for="ape">
+
+Apellido:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="ape">
+
+<br>
+
+<input
+type="submit">
+
+</fieldset>
+
+</form>
+
+</section>
+    <hr>
+
+    <!-- ========================================= -->
+    <!-- 7. Elemento FIELDSET y LEGEND -->
+    <!-- ========================================= -->
+
+    <section>
+        <h2>7. &lt;fieldset&gt; y &lt;legend&gt;</h2>
+
+        <p>
+            <code>&lt;fieldset&gt;</code> agrupa controles relacionados
+            y <code>&lt;legend&gt;</code> coloca un título.
+        </p>
+
+        <form>
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre2">Nombre:</label><br>
+                <input type="text" id="nombre2"><br><br>
+
+                <label for="apellido2">Apellido:</label><br>
+                <input type="text" id="apellido2"><br><br>
+
+                <input type="submit" value="Guardar">
+            </fieldset>
+        </form>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- 8. Elemento DATALIST -->
+    <!-- ========================================= -->
+
+    <section>
+
+        <h2>8. &lt;datalist&gt;</h2>
+
+        <p>
+            Permite mostrar sugerencias mientras el usuario escribe.
+        </p>
+
+        <form>
+
+            <label for="browser">Navegador:</label><br>
+
+            <input list="browsers" id="browser">
+
+            <datalist id="browsers">
+                <option value="Google Chrome">
+                <option value="Mozilla Firefox">
+                <option value="Microsoft Edge">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+        </form>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- 9. Elemento OUTPUT -->
+    <!-- ========================================= -->
+
+    <section>
+
+        <h2>9. &lt;output&gt;</h2>
+
+        <p>
+            Muestra el resultado de un cálculo realizado con JavaScript.
+        </p>
+
+        <form oninput="resultado.value=parseInt(num1.value)+parseInt(num2.value)">
+
+            <label>Número 1:</label>
+            <input type="range"
+                   id="num1"
+                   name="num1"
+                   value="50"
+                   min="0"
+                   max="100">
+
+            <br><br>
+
+            <label>Número 2:</label>
+
+            <input type="number"
+                   id="num2"
+                   name="num2"
+                   value="50">
+
+            <br><br>
+
+            Resultado:
+
+            <output name="resultado"></output>
+
+        </form>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- 10. RESUMEN -->
+    <!-- ========================================= -->
+
+    <section>
+
+        <h2>10. Resumen</h2>
+
+        <table>
+
+            <tr>
+                <th>Elemento</th>
+                <th>Función</th>
+            </tr>
+
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>Contenedor del formulario.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;input&gt;</td>
+                <td>Campo de entrada.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>Etiqueta descriptiva.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>Lista desplegable.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;option&gt;</td>
+                <td>Opción dentro del select.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Área de texto.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>Botón.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>Agrupa controles.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;legend&gt;</td>
+                <td>Título del grupo.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;datalist&gt;</td>
+                <td>Sugerencias para un input.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;output&gt;</td>
+                <td>Muestra resultados.</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+</body>
+</html>
