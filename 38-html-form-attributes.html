@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Lección 38 - HTML Form Attributes
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 38 - HTML Form Attributes</title>
+
+    <style>
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f7fb;
+            margin:30px;
+            line-height:1.6;
+        }
+
+        h1{
+            text-align:center;
+            color:#0b5394;
+        }
+
+        section{
+            background:white;
+            border:1px solid #cccccc;
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:25px;
+        }
+
+        h2{
+            color:#0b5394;
+        }
+
+        form{
+            margin-top:15px;
+        }
+
+        input[type=text]{
+            width:250px;
+            padding:8px;
+            margin-bottom:10px;
+        }
+
+        input[type=submit]{
+            background:#0b5394;
+            color:white;
+            border:none;
+            padding:10px 18px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        code{
+            background:#eeeeee;
+            padding:3px 6px;
+            border-radius:5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Lección 38 - HTML Form Attributes</h1>
+
+<p>
+
+Los atributos del elemento
+<strong>&lt;form&gt;</strong>
+permiten controlar la forma en que un formulario envía y procesa
+la información introducida por el usuario.
+
+</p>
+
+<hr>
+
+<!-- =====================================================
+     1. Action
+====================================================== -->
+
+<section>
+
+<h2>1. Atributo action</h2>
+
+<p>
+
+El atributo
+<strong>action</strong>
+indica el archivo o página donde serán enviados
+los datos del formulario.
+
+</p>
+
+<code>
+
+&lt;form action="/action_page.php"&gt;
+
+</code>
+
+<form action="/action_page.php">
+
+<label for="nombre">
+
+Nombre:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="nombre"
+name="nombre"
+value="Juan">
+
+<br>
+
+<label for="apellido">
+
+Apellido:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="apellido"
+name="apellido"
+value="Pérez">
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     2. Target
+====================================================== -->
+
+<section>
+
+<h2>2. Atributo target</h2>
+
+<p>
+
+El atributo
+<strong>target</strong>
+especifica dónde se mostrará la respuesta
+del formulario.
+
+</p>
+
+<ul>
+
+<li><strong>_self</strong> → misma pestaña.</li>
+
+<li><strong>_blank</strong> → nueva pestaña.</li>
+
+<li><strong>_parent</strong> → marco padre.</li>
+
+<li><strong>_top</strong> → ventana completa.</li>
+
+</ul>
+
+<form
+action="/action_page.php"
+target="_blank">
+
+<label for="correo">
+
+Correo:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="correo"
+name="correo">
+
+<br><br>
+
+<input
+type="submit"
+value="Abrir en nueva pestaña">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     3. Method GET
+====================================================== -->
+
+<section>
+
+<h2>3. Atributo method="get"</h2>
+
+<p>
+
+Con
+<strong>GET</strong>
+los datos se agregan a la URL.
+
+</p>
+
+<p>
+
+Se recomienda para búsquedas o información
+que no sea confidencial.
+
+</p>
+
+<code>
+
+&lt;form method="get"&gt;
+
+</code>
+
+<form
+action="/action_page.php"
+method="get">
+
+<label for="buscar">
+
+Buscar:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="buscar"
+name="buscar">
+
+<br><br>
+
+<input
+type="submit"
+value="Buscar">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     4. Method POST
+====================================================== -->
+
+<section>
+
+<h2>4. Atributo method="post"</h2>
+
+<p>
+
+Con
+<strong>POST</strong>
+los datos se envían dentro del cuerpo
+de la petición HTTP.
+
+</p>
+
+<p>
+
+Es el método recomendado cuando el formulario
+contiene información personal o sensible.
+
+</p>
+
+<code>
+
+&lt;form method="post"&gt;
+
+</code>
+
+<form
+action="/action_page.php"
+method="post">
+
+<label for="usuario">
+
+Usuario:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="usuario"
+name="usuario">
+
+<br>
+
+<label for="clave">
+
+Contraseña:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="clave"
+name="clave">
+
+<br><br>
+
+<input
+type="submit"
+value="Iniciar sesión">
+
+</form>
+
+</section>
+<!-- =====================================================
+     5. Atributo autocomplete
+====================================================== -->
+
+<section>
+
+<h2>5. Atributo autocomplete</h2>
+
+<p>
+
+El atributo
+<strong>autocomplete</strong>
+indica si el navegador puede completar
+automáticamente los campos del formulario con datos
+guardados anteriormente.
+
+</p>
+
+<code>
+
+&lt;form autocomplete="on"&gt;
+
+</code>
+
+<form
+action="/action_page.php"
+autocomplete="on">
+
+<label for="nombreAuto">
+
+Nombre:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="nombreAuto"
+name="nombreAuto">
+
+<br><br>
+
+<label for="correoAuto">
+
+Correo:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="correoAuto"
+name="correoAuto">
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     6. Atributo novalidate
+====================================================== -->
+
+<section>
+
+<h2>6. Atributo novalidate</h2>
+
+<p>
+
+El atributo
+<strong>novalidate</strong>
+evita que el navegador valide los datos antes
+de enviar el formulario.
+
+</p>
+
+<code>
+
+&lt;form novalidate&gt;
+
+</code>
+
+<form
+action="/action_page.php"
+novalidate>
+
+<label for="emailNo">
+
+Correo electrónico:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="emailNo"
+name="emailNo">
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar sin validar">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     7. Atributo accept-charset
+====================================================== -->
+
+<section>
+
+<h2>7. Atributo accept-charset</h2>
+
+<p>
+
+El atributo
+<strong>accept-charset</strong>
+especifica la codificación de caracteres utilizada
+al enviar el formulario.
+
+</p>
+
+<code>
+
+&lt;form accept-charset="UTF-8"&gt;
+
+</code>
+
+<form
+action="/action_page.php"
+accept-charset="UTF-8">
+
+<label for="mensaje">
+
+Mensaje:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="mensaje"
+name="mensaje">
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     8. Atributo enctype
+====================================================== -->
+
+<section>
+
+<h2>8. Atributo enctype</h2>
+
+<p>
+
+El atributo
+<strong>enctype</strong>
+define cómo se codifican los datos cuando se usa
+el método <strong>POST</strong>.
+
+</p>
+
+<p>
+
+Uno de los valores más utilizados es:
+
+</p>
+
+<code>
+
+multipart/form-data
+
+</code>
+
+<form
+action="/action_page.php"
+method="post"
+enctype="multipart/form-data">
+
+<label for="archivo">
+
+Nombre del archivo:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="archivo"
+name="archivo">
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     9. Atributo name
+====================================================== -->
+
+<section>
+
+<h2>9. Atributo name</h2>
+
+<p>
+
+El atributo
+<strong>name</strong>
+asigna un nombre al formulario para que pueda
+identificarse mediante JavaScript o desde el servidor.
+
+</p>
+
+<code>
+
+&lt;form name="miFormulario"&gt;
+
+</code>
+
+<form
+name="miFormulario"
+action="/action_page.php">
+
+<label for="usuario2">
+
+Usuario:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="usuario2"
+name="usuario2">
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     10. Atributo rel
+====================================================== -->
+
+<section>
+
+<h2>10. Atributo rel</h2>
+
+<p>
+
+El atributo
+<strong>rel</strong>
+indica la relación entre el documento actual
+y el recurso que recibirá los datos del formulario.
+
+</p>
+
+<p>
+
+Este atributo es poco utilizado, pero forma parte
+de los atributos disponibles para
+<strong>&lt;form&gt;</strong>.
+
+</p>
+
+<code>
+
+&lt;form rel="external"&gt;
+
+</code>
+
+<form
+action="/action_page.php"
+rel="external">
+
+<label for="datoRel">
+
+Dato:
+
+</label>
+
+<br>
+
+<input
+type="text"
+id="datoRel"
+name="datoRel">
+
+<br><br>
+
+<input
+type="submit"
+value="Enviar">
+
+</form>
+
+</section>
+
+<!-- =====================================================
+     11. Resumen de la lección
+====================================================== -->
+
+<section>
+
+<h2>11. Resumen de la lección</h2>
+
+<ul>
+
+<li><strong>action</strong> indica dónde se enviarán los datos.</li>
+
+<li><strong>target</strong> especifica dónde se mostrará la respuesta.</li>
+
+<li><strong>method="get"</strong> envía la información en la URL.</li>
+
+<li><strong>method="post"</strong> envía la información dentro de la petición HTTP.</li>
+
+<li><strong>autocomplete</strong> activa o desactiva el autocompletado.</li>
+
+<li><strong>novalidate</strong> evita la validación automática.</li>
+
+<li><strong>accept-charset</strong> define la codificación utilizada.</li>
+
+<li><strong>enctype</strong> define cómo se codifican los datos enviados.</li>
+
+<li><strong>name</strong> asigna un nombre al formulario.</li>
+
+<li><strong>rel</strong> define la relación entre el formulario y el recurso de destino.</li>
+
+</ul>
+
+</section>
+
+<hr>
+
+<footer>
+
+<p style="text-align:center;">
+
+Lección 38 - HTML Form Attributes<br>
+
+Ejemplos de los principales atributos del elemento
+<strong>&lt;form&gt;</strong> utilizados para controlar el envío y procesamiento de formularios HTML.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
