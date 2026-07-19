@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 40 - HTML Input Types</title>
+
+    <style>
+
+        body{
+
+            font-family:Arial,Helvetica,sans-serif;
+
+            margin:30px;
+
+            background:#f4f4f4;
+
+            line-height:1.6;
+
+        }
+
+        h1{
+
+            color:#0b5394;
+
+        }
+
+        section{
+
+            background:white;
+
+            padding:20px;
+
+            margin-bottom:25px;
+
+            border-radius:8px;
+
+            box-shadow:0 0 8px rgba(0,0,0,.15);
+
+        }
+
+        h2{
+
+            color:#0b5394;
+
+        }
+
+        form{
+
+            margin-top:15px;
+
+        }
+
+        input,
+        select{
+
+            padding:8px;
+
+            margin:8px 0;
+
+        }
+
+        code{
+
+            background:#eeeeee;
+
+            padding:2px 6px;
+
+            border-radius:4px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Lección 40 - HTML Input Types</h1>
+
+<p>
+
+El elemento <strong>&lt;input&gt;</strong> puede comportarse de muchas formas dependiendo del atributo <code>type</code>.
+
+</p>
+
+<hr>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>1. Input type="text"</h2>
+
+<p>Campo de texto de una sola línea.</p>
+
+<form>
+
+<label>Nombre:</label><br>
+
+<input type="text" placeholder="Escribe tu nombre">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>2. Input type="password"</h2>
+
+<p>Oculta los caracteres escritos.</p>
+
+<form>
+
+<label>Contraseña:</label><br>
+
+<input type="password">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>3. Input type="submit"</h2>
+
+<p>Envía el formulario.</p>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<br><br>
+
+<input type="submit" value="Enviar">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>4. Input type="reset"</h2>
+
+<p>Restablece todos los valores del formulario.</p>
+
+<form>
+
+<input type="text" value="Juan">
+
+<br><br>
+
+<input type="reset">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>5. Input type="radio"</h2>
+
+<p>Permite seleccionar solo una opción.</p>
+
+<form>
+
+<input type="radio" name="lenguaje"> HTML
+
+<br>
+
+<input type="radio" name="lenguaje"> CSS
+
+<br>
+
+<input type="radio" name="lenguaje"> JavaScript
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>6. Input type="checkbox"</h2>
+
+<p>Permite seleccionar varias opciones.</p>
+
+<form>
+
+<input type="checkbox"> Computadora
+
+<br>
+
+<input type="checkbox"> Laptop
+
+<br>
+
+<input type="checkbox"> Tablet
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>7. Input type="button"</h2>
+
+<p>Botón que ejecuta una acción.</p>
+
+<input
+
+type="button"
+
+value="Haz clic"
+
+onclick="alert('Hola Mundo')">
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>8. Input type="color"</h2>
+
+<p>Selector de color.</p>
+
+<form>
+
+<input type="color">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>9. Input type="date"</h2>
+
+<p>Permite seleccionar una fecha.</p>
+
+<form>
+
+<input type="date">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>10. Input type="datetime-local"</h2>
+
+<p>Selecciona fecha y hora.</p>
+
+<form>
+
+<input type="datetime-local">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>11. Input type="email"</h2>
+
+<p>Campo para direcciones de correo.</p>
+
+<form>
+
+<input
+
+type="email"
+
+placeholder="correo@ejemplo.com">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>12. Input type="file"</h2>
+
+<p>Permite seleccionar archivos.</p>
+
+<form>
+
+<input type="file">
+
+</form>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>13. Input type="hidden"</h2>
+
+<p>
+
+Este campo permanece oculto para el usuario.
+
+</p>
+
+<form>
+
+<input
+
+type="hidden"
+
+value="12345">
+
+<input type="submit">
+
+</form>
+
+</section>
+<!-- ===================================================== -->
+
+<section>
+
+<h2>14. Input type="month"</h2>
+
+<p>
+Permite seleccionar un mes y año.
+</p>
+
+<form>
+
+<label>Cumpleaños:</label>
+
+<br>
+
+<input type="month">
+
+</form>
+
+</section>
+
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>15. Input type="number"</h2>
+
+<p>
+Campo para introducir números.
+</p>
+
+<form>
+
+<label>Cantidad (1 - 10):</label>
+
+<br>
+
+<input 
+type="number"
+min="1"
+max="10">
+
+</form>
+
+</section>
+
+
+<!-- ===================================================== -->
+
+<section>
+
+<h2>Restricciones de Input</h2>
+
+<p>
+Los campos pueden tener restricciones usando atributos.
+</p>
+
+
+<ul>
+
+<li><strong>min:</strong> valor mínimo permitido</li>
+
+<li><strong>max:</strong> valor máximo permitido</li>
+
+<li><strong>step:</strong> intervalo de números</li>
+
+<li><strong>required:</strong> campo obligatorio</li>
+
+<li><strong>readonly:</strong> solo lectura</li>
+
+<li><strong>disabled:</strong> campo deshabilitado</li>
+
+</ul>
+
+
+<form>
+
+<label>Ejemplo:</label>
+
+<br>
+
+<input 
+type="number"
+min="0"
+max="100"
+step="10"
+value="30">
+
+</form>
+
+
+</section>
+
+
+<!-- ===================================================== -->
+
+
+<section>
+
+<h2>16. Input type="range"</h2>
+
+<p>
+Crea un control deslizante.
+</p>
+
+<form>
+
+<label>Volumen:</label>
+
+<br>
+
+<input 
+type="range"
+min="0"
+max="100">
+
+</form>
+
+
+</section>
+
+
+<!-- ===================================================== -->
+
+
+<section>
+
+<h2>17. Input type="search"</h2>
+
+<p>
+Campo utilizado para búsquedas.
+</p>
+
+
+<form>
+
+<label>Buscar:</label>
+
+<br>
+
+<input 
+type="search"
+placeholder="Buscar...">
+
+</form>
+
+
+</section>
+
+
+<!-- ===================================================== -->
+
+
+<section>
+
+<h2>18. Input type="tel"</h2>
+
+<p>
+Campo para números telefónicos.
+</p>
+
+
+<form>
+
+<label>Teléfono:</label>
+
+<br>
+
+<input 
+type="tel"
+placeholder="123-456-789">
+
+</form>
+
+
+</section>
+
+
+<!-- ===================================================== -->
+
+
+<section>
+
+<h2>19. Input type="time"</h2>
+
+<p>
+Permite seleccionar una hora.
+</p>
+
+
+<form>
+
+<label>Hora:</label>
+
+<br>
+
+<input type="time">
+
+</form>
+
+
+</section>
+
+
+<!-- ===================================================== -->
+
+
+<section>
+
+<h2>20. Input type="url"</h2>
+
+<p>
+Campo para direcciones web.
+</p>
+
+
+<form>
+
+<label>Página web:</label>
+
+<br>
+
+<input 
+type="url"
+placeholder="https://ejemplo.com">
+
+</form>
+
+
+</section>
+
+
+<!-- ===================================================== -->
+
+
+<section>
+
+<h2>21. Input type="week"</h2>
+
+<p>
+Permite seleccionar una semana y año.
+</p>
+
+
+<form>
+
+<label>Semana:</label>
+
+<br>
+
+<input type="week">
+
+</form>
+
+
+</section>
+
+
+
+<!-- ===================================================== -->
+
+
+<section>
+
+<h2>Resumen HTML Input Types</h2>
+
+
+<table border="1" cellpadding="10">
+
+<tr>
+
+<th>Tipo</th>
+
+<th>Descripción</th>
+
+</tr>
+
+
+<tr>
+<td>text</td>
+<td>Texto de una línea</td>
+</tr>
+
+
+<tr>
+<td>password</td>
+<td>Contraseña oculta</td>
+</tr>
+
+
+<tr>
+<td>submit</td>
+<td>Enviar formulario</td>
+</tr>
+
+
+<tr>
+<td>reset</td>
+<td>Restablecer valores</td>
+</tr>
+
+
+<tr>
+<td>radio</td>
+<td>Seleccionar una opción</td>
+</tr>
+
+
+<tr>
+<td>checkbox</td>
+<td>Seleccionar varias opciones</td>
+</tr>
+
+
+<tr>
+<td>color</td>
+<td>Selector de color</td>
+</tr>
+
+
+<tr>
+<td>date</td>
+<td>Seleccionar fecha</td>
+</tr>
+
+
+<tr>
+<td>email</td>
+<td>Correo electrónico</td>
+</tr>
+
+
+<tr>
+<td>file</td>
+<td>Subir archivos</td>
+</tr>
+
+
+<tr>
+<td>number</td>
+<td>Números</td>
+</tr>
+
+
+<tr>
+<td>range</td>
+<td>Control deslizante</td>
+</tr>
+
+
+<tr>
+<td>search</td>
+<td>Búsqueda</td>
+</tr>
+
+
+<tr>
+<td>tel</td>
+<td>Teléfono</td>
+</tr>
+
+
+<tr>
+<td>time</td>
+<td>Hora</td>
+</tr>
+
+
+<tr>
+<td>url</td>
+<td>Dirección web</td>
+</tr>
+
+
+<tr>
+<td>week</td>
+<td>Semana y año</td>
+</tr>
+
+
+</table>
+
+
+</section>
+
+
+</body>
+
+</html>
