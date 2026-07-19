@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 25 - HTML Buttons</title>
+
+    <style>
+
+        /* =====================================================
+           Estilo personalizado para un botón.
+        ====================================================== */
+        .botonVerde{
+            background-color: green;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .botonVerde:hover{
+            background-color: darkgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Lección 25 - HTML Buttons</h1>
+
+    <hr>
+
+    <!-- =====================================================
+         1. Botón básico
+         El botón no realiza ninguna acción.
+    ====================================================== -->
+
+    <h2>1. Botón básico</h2>
+
+    <button>Haz clic aquí</button>
+
+    <hr>
+
+    <!-- =====================================================
+         2. Botón con estilos CSS
+    ====================================================== -->
+
+    <h2>2. Botón con estilos CSS</h2>
+
+    <button class="botonVerde">
+        Botón Verde
+    </button>
+
+    <hr>
+
+    <!-- =====================================================
+         3. Botón deshabilitado
+         No permite hacer clic.
+    ====================================================== -->
+
+    <h2>3. Botón deshabilitado</h2>
+
+    <button disabled>
+        Botón Deshabilitado
+    </button>
+
+    <hr>
+
+    <!-- =====================================================
+         4. Botón con JavaScript
+         Ejecuta una función al hacer clic.
+    ====================================================== -->
+
+    <h2>4. Botón con JavaScript</h2>
+
+    <button onclick="mostrarMensaje()">
+        Mostrar mensaje
+    </button>
+
+    <hr>
+
+    <!-- =====================================================
+         5. Tipos de botones
+         button, submit y reset.
+    ====================================================== -->
+
+    <h2>5. Tipos de botones</h2>
+
+    <button type="button">
+        type="button"
+    </button>
+
+    <button type="submit">
+        type="submit"
+    </button>
+
+    <button type="reset">
+        type="reset"
+    </button>
+
+    <hr>
+
+    <!-- =====================================================
+         6. Botones dentro de un formulario
+         Submit envía la información.
+         Reset limpia los campos.
+    ====================================================== -->
+
+    <h2>6. Botones dentro de un formulario</h2>
+
+    <form action="#">
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+
+        <br><br>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+        <button type="reset">
+            Limpiar formulario
+        </button>
+
+    </form>
+
+    <!-- =====================================================
+         JavaScript
+         Función que muestra una alerta al usuario.
+    ====================================================== -->
+
+    <script>
+
+        function mostrarMensaje(){
+
+            alert("¡Hola! Has presionado el botón.");
+
+        }
+
+    </script>
+
+</body>
+</html>
