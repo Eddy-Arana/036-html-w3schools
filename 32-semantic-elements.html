@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Metadatos del documento
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 32 - HTML Semantic Elements</title>
+
+    <!-- =====================================================
+         Estilos CSS
+    ====================================================== -->
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+            line-height:1.6;
+
+        }
+
+        header{
+
+            background:#0b5394;
+            color:white;
+            padding:25px;
+            text-align:center;
+
+        }
+
+        nav{
+
+            background:#333;
+            padding:15px;
+            text-align:center;
+
+        }
+
+        nav a{
+
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+
+        }
+
+        nav a:hover{
+
+            color:yellow;
+
+        }
+
+        main{
+
+            padding:25px;
+
+        }
+
+        section{
+
+            background:white;
+            margin-bottom:25px;
+            padding:20px;
+            border-radius:8px;
+            box-shadow:0 2px 5px rgba(0,0,0,.2);
+
+        }
+
+        article{
+
+            background:#eef5ff;
+            padding:15px;
+            border-left:5px solid #0b5394;
+            margin-top:15px;
+
+        }
+
+        aside{
+
+            background:#fff4c4;
+            padding:15px;
+            border-left:5px solid orange;
+            margin-top:20px;
+
+        }
+
+        figure{
+
+            text-align:center;
+            margin-top:20px;
+
+        }
+
+        figure img{
+
+            max-width:100%;
+            border-radius:8px;
+
+        }
+
+        figcaption{
+
+            margin-top:10px;
+            font-style:italic;
+
+        }
+
+        details{
+
+            margin-top:15px;
+            background:#eeeeee;
+            padding:12px;
+            border-radius:6px;
+
+        }
+
+        mark{
+
+            background:yellow;
+
+        }
+
+        footer{
+
+            background:#0b5394;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+
+     Define el encabezado principal del documento.
+====================================================== -->
+
+<header>
+
+    <h1>Lección 32 - HTML Semantic Elements</h1>
+
+    <p>
+
+        Ejemplos de los principales elementos semánticos de HTML5.
+
+    </p>
+
+</header>
+
+<!-- =====================================================
+     NAV
+
+     Contiene los enlaces principales de navegación.
+====================================================== -->
+
+<nav>
+
+    <a href="#">Inicio</a>
+
+    <a href="#">Noticias</a>
+
+    <a href="#">Galería</a>
+
+    <a href="#">Contacto</a>
+
+</nav>
+
+<!-- =====================================================
+     MAIN
+
+     Contiene el contenido principal del documento.
+====================================================== -->
+
+<main>
+
+<!-- =====================================================
+     SECTION
+
+     Divide el contenido en secciones temáticas.
+====================================================== -->
+
+<section>
+
+<h2>1. Elemento &lt;section&gt;</h2>
+
+<p>
+
+Una sección agrupa contenido relacionado dentro del documento.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     ARTICLE
+
+     Representa contenido independiente.
+====================================================== -->
+
+<section>
+
+<h2>2. Elemento &lt;article&gt;</h2>
+
+<article>
+
+<header>
+
+<h3>Google Chrome</h3>
+
+<p>Publicado el <time datetime="2026-07-18">18 de julio de 2026</time></p>
+
+</header>
+
+<p>
+
+Google Chrome es uno de los navegadores web más utilizados en el mundo.
+
+</p>
+
+<footer>
+
+Eddy Lester Ramirez Arana
+
+</footer>
+
+</article>
+
+<article>
+
+<header>
+
+<h3>Mozilla Firefox</h3>
+
+</header>
+
+<p>
+
+Mozilla Firefox es un navegador de código abierto desarrollado por Mozilla.
+
+</p>
+
+</article>
+
+</section>
+
+<!-- =====================================================
+     ASIDE
+
+     Información complementaria.
+====================================================== -->
+
+<section>
+
+<h2>3. Elemento &lt;aside&gt;</h2>
+
+<p>
+
+Este texto pertenece al contenido principal.
+
+</p>
+
+<aside>
+
+Información adicional relacionada con el contenido principal.
+
+</aside>
+
+</section>
+
+<!-- =====================================================
+     FIGURE Y FIGCAPTION
+
+     Imagen con descripción.
+====================================================== -->
+
+<section>
+
+<h2>4. Elementos &lt;figure&gt; y &lt;figcaption&gt;</h2>
+
+<figure>
+
+<img
+src="https://picsum.photos/id/1018/700/350"
+alt="Montaña">
+
+<figcaption>
+
+Figura 1. Paisaje de montaña.
+
+</figcaption>
+
+</figure>
+
+</section>
+
+<!-- =====================================================
+     DETAILS Y SUMMARY
+
+     Información desplegable.
+====================================================== -->
+
+<section>
+
+<h2>5. Elementos &lt;details&gt; y &lt;summary&gt;</h2>
+
+<details>
+
+<summary>
+
+Mostrar información adicional
+
+</summary>
+
+<p>
+
+Este contenido aparece únicamente cuando el usuario expande el elemento.
+
+</p>
+
+</details>
+
+</section>
+
+<!-- =====================================================
+     MARK
+
+     Resalta texto importante.
+====================================================== -->
+
+<section>
+
+<h2>6. Elemento &lt;mark&gt;</h2>
+
+<p>
+
+HTML permite <mark>resaltar información importante</mark> dentro del texto.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     TIME
+
+     Representa fechas y horas.
+====================================================== -->
+
+<section>
+
+<h2>7. Elemento &lt;time&gt;</h2>
+
+<p>
+
+La fecha del curso es:
+
+<time datetime="2026-07-18">
+
+18 de julio de 2026
+
+</time>
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     SEMÁNTICA
+
+     Ventajas del uso de elementos semánticos.
+====================================================== -->
+
+<section>
+
+<h2>8. ¿Por qué utilizar elementos semánticos?</h2>
+
+<ul>
+
+<li>Mejor organización del código.</li>
+
+<li>Mayor accesibilidad.</li>
+
+<li>Favorecen el posicionamiento SEO.</li>
+
+<li>Facilitan el mantenimiento del sitio web.</li>
+
+<li>El código es más fácil de comprender.</li>
+
+</ul>
+
+</section>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+
+     Pie de página del documento.
+====================================================== -->
+
+<footer>
+
+<p>
+
+Lección 32 - HTML Semantic Elements
+
+</p>
+
+<p>
+
+Ejemplo educativo para aprender HTML5.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
