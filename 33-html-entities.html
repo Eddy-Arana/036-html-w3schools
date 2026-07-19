@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Metadatos del documento
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 33 - HTML Entities</title>
+
+    <!-- =====================================================
+         Estilos CSS
+    ====================================================== -->
+
+    <style>
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin:30px;
+            background:#f4f4f4;
+            line-height:1.6;
+        }
+
+        h1{
+            text-align:center;
+            color:#0b5394;
+        }
+
+        section{
+            background:white;
+            border:1px solid #cccccc;
+            border-radius:8px;
+            padding:20px;
+            margin-bottom:25px;
+        }
+
+        h2{
+            color:#0b5394;
+        }
+
+        table{
+
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+
+        }
+
+        table, th, td{
+
+            border:1px solid gray;
+
+        }
+
+        th{
+
+            background:#0b5394;
+            color:white;
+            padding:10px;
+
+        }
+
+        td{
+
+            padding:10px;
+            text-align:center;
+
+        }
+
+        code{
+
+            background:#eeeeee;
+            padding:2px 6px;
+            border-radius:4px;
+            font-family:Consolas, monospace;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Lección 33 - HTML Entities</h1>
+
+<p>
+
+Las entidades HTML permiten mostrar caracteres reservados,
+símbolos especiales y caracteres que normalmente el navegador
+interpretaría como código HTML.
+
+</p>
+
+<hr>
+
+<!-- =====================================================
+     1. Caracteres reservados
+====================================================== -->
+
+<section>
+
+<h2>1. Caracteres reservados</h2>
+
+<p>
+
+Para mostrar el símbolo menor que se utiliza:
+
+<code>&amp;lt;</code>
+
+Resultado:
+
+<strong>&lt;</strong>
+
+</p>
+
+<p>
+
+Para mostrar el símbolo mayor que:
+
+<code>&amp;gt;</code>
+
+Resultado:
+
+<strong>&gt;</strong>
+
+</p>
+
+<p>
+
+Para mostrar un ampersand:
+
+<code>&amp;amp;</code>
+
+Resultado:
+
+<strong>&amp;</strong>
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     2. Espacio no separable
+====================================================== -->
+
+<section>
+
+<h2>2. Espacio no separable (&amp;nbsp;)</h2>
+
+<p>
+
+Sin utilizar &amp;nbsp;:
+
+</p>
+
+<p>
+
+HTML elimina múltiples espacios.
+
+</p>
+
+<p>
+
+Utilizando &amp;nbsp;:
+
+</p>
+
+<p>
+
+HTML&nbsp;&nbsp;&nbsp;&nbsp;conserva&nbsp;&nbsp;&nbsp;estos&nbsp;espacios.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     3. Entidades más utilizadas
+====================================================== -->
+
+<section>
+
+<h2>3. Entidades HTML más comunes</h2>
+
+<table>
+
+<tr>
+
+<th>Resultado</th>
+
+<th>Nombre</th>
+
+<th>Entidad</th>
+
+<th>Número</th>
+
+</tr>
+
+<tr>
+
+<td>&lt;</td>
+
+<td>Menor que</td>
+
+<td>&amp;lt;</td>
+
+<td>&amp;#60;</td>
+
+</tr>
+
+<tr>
+
+<td>&gt;</td>
+
+<td>Mayor que</td>
+
+<td>&amp;gt;</td>
+
+<td>&amp;#62;</td>
+
+</tr>
+
+<tr>
+
+<td>&amp;</td>
+
+<td>Ampersand</td>
+
+<td>&amp;amp;</td>
+
+<td>&amp;#38;</td>
+
+</tr>
+
+<tr>
+
+<td>"</td>
+
+<td>Comillas dobles</td>
+
+<td>&amp;quot;</td>
+
+<td>&amp;#34;</td>
+
+</tr>
+
+<tr>
+
+<td>'</td>
+
+<td>Comillas simples</td>
+
+<td>&amp;apos;</td>
+
+<td>&amp;#39;</td>
+
+</tr>
+
+<tr>
+
+<td>©</td>
+
+<td>Copyright</td>
+
+<td>&amp;copy;</td>
+
+<td>&amp;#169;</td>
+
+</tr>
+
+<tr>
+
+<td>®</td>
+
+<td>Marca registrada</td>
+
+<td>&amp;reg;</td>
+
+<td>&amp;#174;</td>
+
+</tr>
+
+<tr>
+
+<td>™</td>
+
+<td>Trademark</td>
+
+<td>&amp;trade;</td>
+
+<td>&amp;#8482;</td>
+
+</tr>
+
+<tr>
+
+<td>€</td>
+
+<td>Euro</td>
+
+<td>&amp;euro;</td>
+
+<td>&amp;#8364;</td>
+
+</tr>
+
+<tr>
+
+<td>£</td>
+
+<td>Libra</td>
+
+<td>&amp;pound;</td>
+
+<td>&amp;#163;</td>
+
+</tr>
+
+<tr>
+
+<td>¥</td>
+
+<td>Yen</td>
+
+<td>&amp;yen;</td>
+
+<td>&amp;#165;</td>
+
+</tr>
+
+<tr>
+
+<td>¢</td>
+
+<td>Centavo</td>
+
+<td>&amp;cent;</td>
+
+<td>&amp;#162;</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- =====================================================
+     4. Entidades mediante números
+====================================================== -->
+
+<section>
+
+<h2>4. Entidades usando números</h2>
+
+<p>
+
+&lt; = &#60;
+
+</p>
+
+<p>
+
+&gt; = &#62;
+
+</p>
+
+<p>
+
+© = &#169;
+
+</p>
+
+<p>
+
+€ = &#8364;
+
+</p>
+
+<p>
+
+™ = &#8482;
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     5. Marcas diacríticas
+====================================================== -->
+
+<section>
+
+<h2>5. Marcas diacríticas</h2>
+
+<p>
+
+a&#768; → a con acento grave
+
+</p>
+
+<p>
+
+a&#769; → a con acento agudo
+
+</p>
+
+<p>
+
+a&#770; → a con acento circunflejo
+
+</p>
+
+<p>
+
+a&#771; → a con tilde
+
+</p>
+
+<p>
+
+O&#768; → O con acento grave
+
+</p>
+
+<p>
+
+O&#769; → O con acento agudo
+
+</p>
+
+<p>
+
+O&#770; → O con acento circunflejo
+
+</p>
+
+<p>
+
+O&#771; → O con tilde
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     6. Resumen
+====================================================== -->
+
+<section>
+
+<h2>6. Resumen</h2>
+
+<ul>
+
+<li>Las entidades HTML permiten mostrar caracteres reservados.</li>
+
+<li>Existen entidades por nombre y por número.</li>
+
+<li><strong>&amp;nbsp;</strong> crea un espacio que no se divide.</li>
+
+<li>También permiten mostrar símbolos como ©, ®, ™, €, £ y ¥.</li>
+
+<li>Las marcas diacríticas permiten agregar acentos y otros signos a las letras.</li>
+
+</ul>
+
+</section>
+
+</body>
+
+</html>
