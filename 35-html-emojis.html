@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Lección 35 - HTML Emojis
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 35 - HTML Emojis</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:30px;
+            line-height:1.6;
+            background:#f4f7fb;
+        }
+
+        h1{
+            text-align:center;
+            color:#0b5394;
+        }
+
+        section{
+            background:white;
+            border:1px solid #d9d9d9;
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:25px;
+        }
+
+        h2{
+            color:#0b5394;
+        }
+
+        .emoji{
+            font-size:40px;
+            letter-spacing:8px;
+        }
+
+        .grande{
+            font-size:60px;
+        }
+
+        code{
+            background:#eeeeee;
+            padding:3px 6px;
+            border-radius:5px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+
+        table,th,td{
+            border:1px solid gray;
+        }
+
+        th{
+            background:#0b5394;
+            color:white;
+        }
+
+        th,td{
+            padding:10px;
+            text-align:center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Lección 35 - HTML Emojis</h1>
+
+<p>
+
+Los <strong>Emojis</strong> son caracteres pertenecientes al conjunto
+de caracteres <strong>UTF-8 (Unicode)</strong>. No son imágenes,
+sino caracteres especiales que pueden mostrarse como cualquier otro
+texto dentro de una página HTML.
+
+</p>
+
+<hr>
+
+<!-- =====================================================
+     1. UTF-8
+====================================================== -->
+
+<section>
+
+<h2>1. Configuración UTF-8</h2>
+
+<p>
+
+Para que los emojis y otros caracteres especiales funcionen
+correctamente, debemos incluir la siguiente etiqueta dentro del
+elemento <strong>&lt;head&gt;</strong>.
+
+</p>
+
+<code>
+
+&lt;meta charset="UTF-8"&gt;
+
+</code>
+
+</section>
+
+<!-- =====================================================
+     2. Caracteres UTF-8
+====================================================== -->
+
+<section>
+
+<h2>2. Caracteres UTF-8</h2>
+
+<p>
+
+Los caracteres también pueden representarse mediante números.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Carácter</th>
+<th>Número</th>
+
+</tr>
+
+<tr>
+
+<td>A</td>
+<td>&amp;#65;</td>
+
+</tr>
+
+<tr>
+
+<td>B</td>
+<td>&amp;#66;</td>
+
+</tr>
+
+<tr>
+
+<td>C</td>
+<td>&amp;#67;</td>
+
+</tr>
+
+<tr>
+
+<td>Resultado</td>
+<td>&#65; &#66; &#67;</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- =====================================================
+     3. Primer Emoji
+====================================================== -->
+
+<section>
+
+<h2>3. Primer Emoji</h2>
+
+<p>
+
+Los emojis pueden escribirse utilizando su número Unicode.
+
+</p>
+
+<code>
+
+&amp;#128512;
+
+</code>
+
+<p class="emoji">
+
+&#128512;
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     4. Emojis con diferentes tamaños
+====================================================== -->
+
+<section>
+
+<h2>4. Emojis con diferentes tamaños</h2>
+
+<p>
+
+Los emojis son caracteres normales, por lo que pueden cambiar
+de tamaño usando CSS.
+
+</p>
+
+<p class="emoji">
+
+&#128512;
+&#128516;
+&#128525;
+&#128151;
+
+</p>
+
+<p class="grande">
+
+&#128512;
+&#128516;
+&#128525;
+&#128151;
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     5. Smileys
+====================================================== -->
+
+<section>
+
+<h2>5. Smileys</h2>
+
+<p class="emoji">
+
+😀 😂 😊 😎 😜 😁 😄 😅 😍 🤩
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     6. Hands
+====================================================== -->
+
+<section>
+
+<h2>6. Hands</h2>
+
+<p class="emoji">
+
+✌ ✊ ☝ ✋ 👌 👍 👏 🤝 🙌 👋
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     7. People
+====================================================== -->
+
+<section>
+
+<h2>7. People</h2>
+
+<p class="emoji">
+
+👮 🧕 👦 👨 👩 👴 👵 🤴 👸 💏
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     8. Office
+====================================================== -->
+
+<section>
+
+<h2>8. Office</h2>
+
+<p class="emoji">
+
+📈 💻 📌 📆 📒 📁 📂 📚 🖨 🖥
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     9. Places
+====================================================== -->
+
+<section>
+
+<h2>9. Places</h2>
+
+<p class="emoji">
+
+⛺ 🌋 🗽 🗿 🏢 🏠 🏫 🏰 🌉 🏖
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     10. Transport
+====================================================== -->
+
+<section>
+
+<h2>10. Transport</h2>
+
+<p class="emoji">
+
+🚈 🚗 🚢 🚌 🚀 🚲 ✈ 🚁 🚜 🚤
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     11. Animals
+====================================================== -->
+
+<section>
+
+<h2>11. Animals</h2>
+
+<p class="emoji">
+
+🐴 🐕 🐘 🐻 🐞 🦁 🐼 🦒 🦜 🐬
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     12. Food
+====================================================== -->
+
+<section>
+
+<h2>12. Food</h2>
+
+<p class="emoji">
+
+☕ 🌭 🍞 🍩 🍣 🍕 🍔 🍟 🍎 🍉
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     13. Plants
+====================================================== -->
+
+<section>
+
+<h2>13. Plants</h2>
+
+<p class="emoji">
+
+🌴 🌳 🌼 🍁 🥑 🌷 🌵 🌹 🌺 🍀
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     14. Fruits
+====================================================== -->
+
+<section>
+
+<h2>14. Fruits</h2>
+
+<p class="emoji">
+
+🍇 🍊 🍏 🥝 🥥 🍍 🍒 🍑 🍌 🥭
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     15. Sports
+====================================================== -->
+
+<section>
+
+<h2>15. Sports</h2>
+
+<p class="emoji">
+
+⚽ 🏆 🤿 🏋 ⛳ 🎾 🏀 🏈 ⚾ 🏐
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     16. Earth & Sky
+====================================================== -->
+
+<section>
+
+<h2>16. Earth & Sky</h2>
+
+<p class="emoji">
+
+🌐 🌍 🌖 🌟 🌞 🌙 ⭐ 🌎 🌏 ☄
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     17. Weather
+====================================================== -->
+
+<section>
+
+<h2>17. Weather</h2>
+
+<p class="emoji">
+
+⛅ ☔ 🌈 🌂 ⛄ ❄ 🌧 🌩 ☀ 🌤
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     18. Clothing
+====================================================== -->
+
+<section>
+
+<h2>18. Clothing</h2>
+
+<p class="emoji">
+
+👚 👕 🎩 👜 👠 👟 🧢 👔 👗 🧥
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     19. Audio / Video
+====================================================== -->
+
+<section>
+
+<h2>19. Audio / Video</h2>
+
+<p class="emoji">
+
+🎥 🎵 🎹 🔊 📺 🎧 🎤 📷 🎬 📹
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     20. Celebration
+====================================================== -->
+
+<section>
+
+<h2>20. Celebration</h2>
+
+<p class="emoji">
+
+🎁 🎃 🎈 🎓 🎂 🎉 🎊 🥳 🎆 🎇
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     21. Entertainment
+====================================================== -->
+
+<section>
+
+<h2>21. Entertainment</h2>
+
+<p class="emoji">
+
+🎨 🎪 🎭 🎡 🎢 🎲 🎮 🧩 🎯 🎳
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     22. Symbols
+====================================================== -->
+
+<section>
+
+<h2>22. Symbols</h2>
+
+<p class="emoji">
+
+💡 💰 🔐 🔞 🔔 ❤️ ✔ ❌ ⚠ ℹ
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     23. Resumen de la lección
+====================================================== -->
+
+<section>
+
+<h2>23. Resumen</h2>
+
+<ul>
+
+<li>Los emojis pertenecen al conjunto de caracteres <strong>UTF-8 (Unicode)</strong>.</li>
+
+<li>La etiqueta <code>&lt;meta charset="UTF-8"&gt;</code> permite mostrarlos correctamente.</li>
+
+<li>Los emojis pueden escribirse directamente o mediante su número Unicode.</li>
+
+<li>Al ser caracteres de texto, pueden cambiar de tamaño usando CSS.</li>
+
+<li>HTML permite utilizar miles de emojis para mejorar la apariencia de una página web.</li>
+
+</ul>
+
+</section>
+
+<hr>
+
+<footer>
+
+<p style="text-align:center;">
+
+<strong>Lección 35 - HTML Emojis</strong><br>
+
+Ejemplo práctico de uso de emojis y caracteres UTF-8 en HTML.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
