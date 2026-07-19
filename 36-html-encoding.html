@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =====================================================
+         Lección 36 - HTML Encoding (Character Sets)
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lección 36 - HTML Encoding (Character Sets)</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:30px;
+            line-height:1.6;
+            background:#f4f7fb;
+        }
+
+        h1{
+            text-align:center;
+            color:#0b5394;
+        }
+
+        section{
+            background:white;
+            border:1px solid #d9d9d9;
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:25px;
+        }
+
+        h2{
+            color:#0b5394;
+        }
+
+        code{
+            background:#eeeeee;
+            padding:3px 6px;
+            border-radius:5px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+
+        table,
+        th,
+        td{
+            border:1px solid gray;
+        }
+
+        th{
+            background:#0b5394;
+            color:white;
+        }
+
+        th,
+        td{
+            padding:10px;
+            text-align:center;
+        }
+
+        .caracteres{
+            font-size:28px;
+            letter-spacing:5px;
+            margin-top:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Lección 36 - HTML Encoding (Character Sets)</h1>
+
+<p>
+
+HTML utiliza diferentes conjuntos de caracteres
+(<strong>Character Sets</strong>) para representar letras,
+números, símbolos y caracteres especiales correctamente
+en cualquier navegador.
+
+</p>
+
+<hr>
+
+<!-- =====================================================
+     1. HTML Charset
+====================================================== -->
+
+<section>
+
+<h2>1. HTML Charset</h2>
+
+<p>
+
+Para que una página web muestre correctamente los caracteres,
+es necesario indicar el conjunto de caracteres mediante la
+etiqueta <strong>meta charset</strong>.
+
+</p>
+
+<code>
+
+&lt;meta charset="UTF-8"&gt;
+
+</code>
+
+<p>
+
+Actualmente, HTML5 recomienda utilizar
+<strong>UTF-8</strong>.
+
+</p>
+
+</section>
+
+<!-- =====================================================
+     2. ASCII
+====================================================== -->
+
+<section>
+
+<h2>2. Conjunto de caracteres ASCII</h2>
+
+<p>
+
+ASCII fue el primer estándar utilizado en Internet.
+
+</p>
+
+<ul>
+
+<li>Letras inglesas (A-Z y a-z).</li>
+
+<li>Números (0-9).</li>
+
+<li>Símbolos básicos.</li>
+
+<li>128 caracteres en total.</li>
+
+</ul>
+
+<div class="caracteres">
+
+A B C D
+
+<br>
+
+a b c d
+
+<br>
+
+0 1 2 3
+
+<br>
+
+! @ # $ % &
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     3. ANSI
+====================================================== -->
+
+<section>
+
+<h2>3. Conjunto de caracteres ANSI (Windows-1252)</h2>
+
+<p>
+
+ANSI fue el primer conjunto de caracteres utilizado por
+Microsoft Windows.
+
+</p>
+
+<code>
+
+&lt;meta charset="Windows-1252"&gt;
+
+</code>
+
+<ul>
+
+<li>Compatible con ASCII.</li>
+
+<li>Agrega caracteres especiales.</li>
+
+<li>Utilizado en versiones antiguas de Windows.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     4. ISO-8859-1
+====================================================== -->
+
+<section>
+
+<h2>4. ISO-8859-1</h2>
+
+<p>
+
+Fue el conjunto de caracteres predeterminado en HTML 4.
+
+</p>
+
+<code>
+
+&lt;meta charset="ISO-8859-1"&gt;
+
+</code>
+
+<ul>
+
+<li>Soporta 256 caracteres.</li>
+
+<li>Compatible con idiomas europeos.</li>
+
+<li>Actualmente ha sido reemplazado por UTF-8.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     5. UTF-8
+====================================================== -->
+
+<section>
+
+<h2>5. UTF-8</h2>
+
+<p>
+
+UTF-8 es el estándar recomendado para HTML5.
+
+</p>
+
+<code>
+
+&lt;meta charset="UTF-8"&gt;
+
+</code>
+
+<ul>
+
+<li>Compatible con ASCII.</li>
+
+<li>Compatible con miles de idiomas.</li>
+
+<li>Permite utilizar emojis.</li>
+
+<li>Incluye símbolos matemáticos.</li>
+
+<li>Incluye caracteres especiales.</li>
+
+</ul>
+
+</section>
+
+<!-- =====================================================
+     6. Comparación
+====================================================== -->
+
+<section>
+
+<h2>6. Comparación de Character Sets</h2>
+
+<table>
+
+<tr>
+
+<th>Character Set</th>
+
+<th>Cantidad aproximada</th>
+
+<th>Uso</th>
+
+</tr>
+
+<tr>
+
+<td>ASCII</td>
+
+<td>128</td>
+
+<td>Primer estándar para Internet.</td>
+
+</tr>
+
+<tr>
+
+<td>ANSI</td>
+
+<td>256</td>
+
+<td>Windows antiguos.</td>
+
+</tr>
+
+<tr>
+
+<td>ISO-8859-1</td>
+
+<td>256</td>
+
+<td>HTML 4.</td>
+
+</tr>
+
+<tr>
+
+<td>UTF-8</td>
+
+<td>Más de 1 millón</td>
+
+<td>Estándar actual de HTML5.</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- =====================================================
+     7. Caracteres UTF-8
+====================================================== -->
+
+<section>
+
+<h2>7. Ejemplos de caracteres UTF-8</h2>
+
+<p>
+UTF-8 permite representar caracteres de prácticamente todos
+los idiomas y símbolos del mundo.
+</p>
+
+<h3>Basic Latin</h3>
+
+<div class="caracteres">
+A B C D
+<br>
+a b c d
+<br>
+0 1 2 3
+<br>
+? # $ %
+</div>
+
+<hr>
+
+<h3>Latin Extended A</h3>
+
+<div class="caracteres">
+Ā Ă Ą Ć Ĉ Ċ Ē Ĕ Ė Ę
+</div>
+
+<hr>
+
+<h3>Latin Extended B</h3>
+
+<div class="caracteres">
+ƀ Ɓ Ƃ ƃ Ƅ ƅ Ɔ Ƈ ƈ Ɖ
+</div>
+
+<hr>
+
+<h3>Latin Extended C</h3>
+
+<div class="caracteres">
+Ⱡ ⱡ Ɫ Ᵽ Ɽ ⱥ ⱦ Ⱨ ⱨ Ⱪ
+</div>
+
+<hr>
+
+<h3>Latin Extended D</h3>
+
+<div class="caracteres">
+Ꜧ ꜧ Ꜩ ꜩ Ꜫ ꜫ Ꜭ ꜭ Ꜯ ꜯ
+</div>
+
+<hr>
+
+<h3>Latin Extended E</h3>
+
+<div class="caracteres">
+ꬰ ꬱ ꬲ ꬳ ꬴ ꬵ ꬶ ꬷ ꬸ ꬹ
+</div>
+
+<hr>
+
+<h3>IPA Extensions</h3>
+
+<div class="caracteres">
+ɖ ɜ ɣ ɘ ɫ ɛ ɱ ɷ ɞ
+</div>
+
+<hr>
+
+<h3>Spacing Modifiers</h3>
+
+<div class="caracteres">
+pʰ pʱ pʲ pʳ
+</div>
+
+<hr>
+
+<h3>Diacritical Marks</h3>
+
+<div class="caracteres">
+à á â ã
+<br>
+è é ê ẽ
+<br>
+ò ó ô õ
+</div>
+
+<hr>
+
+<h3>General Punctuation</h3>
+
+<div class="caracteres">
+‰ ‱ ⁒ ‼ ⁇ ⁈ ⁉ ⁎ ⁑ ⁂
+</div>
+
+<hr>
+
+<h3>Super y Subscript</h3>
+
+<div class="caracteres">
+C⁰ Cⁱ C⁴ C⁵ C₆ C₇ C₈
+</div>
+
+<hr>
+
+<h3>Braille</h3>
+
+<div class="caracteres">
+⠓⠑⠇⠇⠕
+<br>
+⠺⠕⠗⠇⠙
+</div>
+
+</section>
+
+<!-- =====================================================
+     8. Resumen
+====================================================== -->
+
+<section>
+
+<h2>8. Resumen de la lección</h2>
+
+<ul>
+
+<li>HTML necesita un conjunto de caracteres para mostrar correctamente el contenido.</li>
+
+<li>El estándar recomendado actualmente es <strong>UTF-8</strong>.</li>
+
+<li>ASCII fue el primer conjunto de caracteres utilizado en Internet.</li>
+
+<li>ANSI fue ampliamente utilizado por Microsoft Windows.</li>
+
+<li>ISO-8859-1 fue el estándar de HTML 4.</li>
+
+<li>UTF-8 soporta millones de caracteres, símbolos y emojis.</li>
+
+<li>La etiqueta recomendada es:</li>
+
+</ul>
+
+<p>
+
+<code>
+&lt;meta charset="UTF-8"&gt;
+</code>
+
+</p>
+
+</section>
+
+<hr>
+
+<footer>
+
+<p style="text-align:center;">
+
+Lección 36 - HTML Encoding (Character Sets)<br>
+
+Uso de Character Sets en HTML5.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
